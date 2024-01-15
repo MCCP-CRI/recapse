@@ -1,0 +1,1071 @@
+Feature,importances
+cumul_ratio_CCS_PROC_67,0.034627516
+cumul_ratio_CCS_DIAG_42,0.03282964
+cumul_ratio_CCS_PROC_167,0.030980632
+cumul_ratio_CCS_PROC_166,0.019258367
+regional,0.014248524
+Grade_2,0.012550008
+cumul_ratio_CCS_DIAG_154,0.010879288
+time_since_CCS_DIAG_42,0.010441522
+time_until_CCS_DIAG_24,0.009161351
+cumul_ratio_VAL_2ND_Anti-infective Agents - Misc.,0.009143936
+cumul_ratio_CCS_DIAG_232,0.008643404
+time_until_CCS_DIAG_161,0.008587069
+time_until_CCS_PROC_182,0.008221387
+surg_prim_site_V1_0,0.008083939
+time_until_VAL_2ND_Antihypertensive Combinations,0.007840742
+time_since_CCS_PROC_220,0.0077474024
+time_until_VAL_2ND_Penicillin Combinations,0.0075223693
+time_until_VAL_2ND_Serotonin-norepinephrine Reuptake Inhibitors (snris),0.0074614263
+time_since_CCS_DIAG_247,0.007405893
+cumul_ratio_CCS_DIAG_141,0.0073744827
+time_until_CCS_DIAG_51,0.0072439834
+time_since_CCS_DIAG_105,0.0066582966
+time_since_CCS_PROC_67,0.0064654592
+cumul_ratio_VAL_2ND_Nitrates,0.006291652
+time_until_CCS_DIAG_154,0.0062909285
+cumul_ratio_CCS_PROC_7,0.0062620477
+cumul_ratio_CCS_PROC_178,0.0062558376
+cumul_ratio_VAL_2ND_Local Anesthetics - Topical,0.00614059
+cumul_ratio_VAL_2ND_Cephalosporins - 3rd Generation,0.0060661216
+cumul_ratio_VAL_2ND_Fluoroquinolones,0.005874956
+time_since_VAL_2ND_Cephalosporins - 2nd Generation,0.005667636
+time_until_CCS_DIAG_84,0.0056638396
+time_since_CCS_DIAG_89,0.0055204947
+time_since_VAL_2ND_Thiazides And Thiazide-like Diuretics,0.0054403963
+CCS_DIAG_653,0.005428885
+surg_prim_site_V1_40,0.005210005
+time_since_CCS_DIAG_207,0.0051084333
+cumul_ratio_CCS_DIAG_651,0.004957561
+time_since_VAL_2ND_Antiperistaltic Agents,0.004908125
+time_since_VAL_2ND_Herpes Agents,0.0048848824
+cumul_ratio_VAL_2ND_Calcium Channel Blockers,0.004837141
+time_since_CCS_PROC_167,0.0048360634
+time_since_CCS_DIAG_211,0.0048327134
+time_since_CCS_DIAG_199,0.004821112
+time_until_CCS_DIAG_47,0.0047893245
+cumul_ratio_CCS_DIAG_256,0.004716936
+cumul_ratio_CCS_DIAG_175,0.004678661
+cumul_ratio_CCS_PROC_209,0.004660079
+time_since_CCS_DIAG_206,0.004608724
+time_since_CCS_DIAG_84,0.0046059056
+cumul_ratio_CCS_PROC_211,0.0044274186
+time_since_VAL_2ND_Cephalosporins - 3rd Generation,0.004357887
+cumul_ratio_VAL_2ND_Anticonvulsants - Misc.,0.004354691
+cumul_ratio_VAL_2ND_Imidazole-related Antifungals,0.0043171654
+cumul_ratio_CCS_DIAG_2,0.004302069
+time_since_VAL_2ND_Fluoroquinolones,0.0042709038
+time_since_CCS_DIAG_88,0.004168675
+time_until_VAL_2ND_Nasal Steroids,0.0041344403
+cumul_ratio_CCS_PROC_39,0.004020535
+time_since_CCS_DIAG_208,0.003980457
+time_since_CCS_DIAG_131,0.003963665
+time_since_CCS_PROC_179,0.00395328
+DAJCC_N,0.003941556
+time_until_CCS_PROC_224,0.0038921945
+time_since_CCS_DIAG_154,0.003867865
+cumul_ratio_VAL_2ND_Proton Pump Inhibitors,0.0038055086
+time_since_CCS_DIAG_55,0.0037528975
+cumul_ratio_VAL_2ND_Serotonin-norepinephrine Reuptake Inhibitors (snris),0.0037012312
+cumul_ratio_CCS_DIAG_130,0.0036971115
+surg_prim_site_V1_99,0.0036809915
+time_until_CCS_DIAG_98,0.0036572102
+cumul_ratio_CCS_DIAG_230,0.0036400333
+cumul_ratio_CCS_PROC_207,0.0036229726
+time_since_CCS_DIAG_230,0.0034989351
+time_since_CCS_PROC_239,0.0034958671
+time_until_CCS_PROC_76,0.00349364
+cumul_ratio_CCS_DIAG_43,0.0034664422
+cumul_ratio_CCS_DIAG_661,0.0034658737
+time_since_CCS_DIAG_91,0.0033931274
+Site_C505,0.0033887841
+time_since_VAL_2ND_Antihypertensive Combinations,0.003279886
+cumul_ratio_CCS_DIAG_120,0.003195232
+time_since_CCS_PROC_211,0.0031781157
+cumul_ratio_CCS_DIAG_95,0.0031752118
+Race_1,0.0031658928
+time_since_VAL_2ND_5-ht3 Receptor Antagonists,0.0031641033
+cumul_ratio_CCS_PROC_182,0.0030907078
+reg_age_at_dx,0.0030887893
+CCS_DIAG_114,0.0030388932
+cumul_ratio_CCS_PROC_234,0.0030339854
+time_since_CCS_PROC_998,0.0030128486
+time_since_CCS_DIAG_87,0.003009225
+time_until_VAL_2ND_Antineoplastic - Hormonal And Related Agents,0.0029871778
+time_since_VAL_2ND_Local Anesthetics - Topical,0.0029644186
+time_since_CCS_DIAG_258,0.0029624566
+time_since_CCS_PROC_241,0.0028383587
+time_until_CCS_PROC_167,0.0027960422
+cumul_ratio_CCS_PROC_76,0.0027459373
+time_since_VAL_2ND_Bone Density Regulators,0.0026904135
+time_until_CCS_PROC_228,0.0026868668
+cumul_ratio_VAL_2ND_5-ht3 Receptor Antagonists,0.0026543473
+time_until_CCS_DIAG_2,0.0025286397
+cumul_ratio_CCS_DIAG_86,0.002522319
+Stage_3,0.0025141982
+cumul_ratio_CCS_DIAG_238,0.0024595973
+time_since_CCS_PROC_209,0.0024172666
+cs_tum_size,0.0024093848
+cumul_ratio_VAL_2ND_Opioid Combinations,0.0024081029
+cumul_ratio_VAL_2ND_Thyroid Hormones,0.0023771184
+time_since_VAL_2ND_Angiotensin Ii Receptor Antagonists,0.0023393817
+cumul_ratio_VAL_2ND_Antineoplastic - Hormonal And Related Agents,0.0023376218
+cumul_ratio_CCS_DIAG_211,0.0022668235
+time_since_CCS_PROC_217,0.0022662338
+cumul_ratio_CCS_DIAG_167,0.002251061
+cumul_ratio_VAL_2ND_Antihistamines - Non-sedating,0.0021942537
+time_until_CCS_PROC_201,0.002179245
+time_until_CCS_DIAG_86,0.002178653
+cumul_ratio_CCS_PROC_165,0.0021447474
+Grade_4,0.0020488112
+time_until_VAL_2ND_Ophthalmic Anti-infectives,0.002046551
+time_since_VAL_2ND_Benzodiazepines,0.0020352243
+time_since_VAL_2ND_Anticonvulsants - Misc.,0.0020329424
+pr_stat_9,0.0020279689
+cumul_ratio_CCS_PROC_227,0.0020204992
+time_until_VAL_2ND_Hmg Coa Reductase Inhibitors,0.002009112
+time_since_CCS_PROC_76,0.0019846535
+cumul_ratio_CCS_PROC_63,0.0019795145
+time_since_CCS_DIAG_52,0.0019747778
+reg_nodes_pos,0.0019612259
+cumul_ratio_CCS_DIAG_212,0.0019519842
+cumul_ratio_CCS_PROC_54,0.0019515791
+time_since_VAL_2ND_Hmg Coa Reductase Inhibitors,0.0019485463
+cumul_ratio_CCS_DIAG_50,0.0019182675
+cumul_ratio_VAL_2ND_Aminopenicillins,0.00191722
+cumul_ratio_CCS_DIAG_237,0.0018878941
+time_until_CCS_DIAG_657,0.001874786
+cumul_ratio_CCS_DIAG_99,0.001854148
+time_since_CCS_DIAG_48,0.0018499214
+time_since_CCS_DIAG_53,0.0018347466
+time_until_VAL_2ND_Local Anesthetics - Topical,0.0018155193
+cs_tum_ext,0.0018040433
+time_since_CCS_DIAG_151,0.001788842
+cumul_ratio_VAL_2ND_Antihistamines - Phenothiazines,0.0017454226
+cumul_ratio_CCS_DIAG_19,0.0017290383
+cumul_ratio_CCS_PROC_224,0.0017207958
+cumul_ratio_CCS_PROC_999,0.0017033992
+Age,0.0016971014
+time_since_CCS_PROC_214,0.0016690152
+cumul_ratio_CCS_PROC_217,0.0016561641
+cumul_ratio_CCS_DIAG_108,0.0016396004
+cumul_ratio_CCS_DIAG_24,0.001631573
+cumul_ratio_VAL_2ND_Ophthalmic Steroids,0.0016311486
+cumul_ratio_CCS_PROC_243,0.0016105704
+cumul_ratio_CCS_DIAG_92,0.0016083205
+cumul_ratio_CCS_PROC_236,0.0015320007
+cumul_ratio_CCS_PROC_231,0.0015259193
+cumul_ratio_CCS_PROC_240,0.0015193282
+cumul_ratio_CCS_DIAG_4,0.0015184347
+cumul_ratio_CCS_PROC_239,0.0015150874
+cumul_ratio_CCS_DIAG_NA,0.001512606
+time_until_CCS_DIAG_143,0.0015068019
+time_since_CCS_DIAG_245,0.0014867632
+cumul_ratio_CCS_DIAG_133,0.0014831979
+time_until_CCS_DIAG_256,0.0014719074
+time_until_VAL_2ND_Opioid Agonists,0.0014676357
+cumul_ratio_CCS_DIAG_125,0.0014532071
+cumul_ratio_CCS_DIAG_245,0.0014173985
+time_since_CCS_PROC_7,0.0014136333
+cumul_ratio_CCS_DIAG_44,0.0014130336
+time_since_CCS_DIAG_81,0.0013964606
+cumul_ratio_VAL_2ND_Non-barbiturate Hypnotics,0.0013907101
+cumul_ratio_CCS_DIAG_81,0.0013757473
+time_since_VAL_2ND_Penicillin Combinations,0.001373224
+time_until_CCS_DIAG_41,0.0013549847
+cumul_ratio_CCS_DIAG_160,0.0013500524
+cs_tum_nodes,0.001339465
+cumul_ratio_CCS_DIAG_51,0.0013350523
+cumul_ratio_CCS_PROC_237,0.0013190968
+time_until_CCS_DIAG_95,0.0013139423
+er_stat_9,0.0013105727
+time_since_CCS_DIAG_161,0.0012996081
+cumul_ratio_CCS_PROC_197,0.0012893946
+cumul_ratio_CCS_DIAG_21,0.0012829822
+time_since_CCS_DIAG_99,0.0012815763
+cumul_ratio_CCS_DIAG_87,0.0012809008
+cumul_ratio_VAL_2ND_Azithromycin,0.0012535846
+time_until_CCS_DIAG_94,0.0012507066
+time_since_CCS_PROC_231,0.001242448
+cumul_ratio_CCS_PROC_155,0.0012382636
+time_until_CCS_PROC_NA,0.0012289608
+time_since_CCS_DIAG_155,0.0012129344
+time_until_CCS_DIAG_55,0.0012127304
+cumul_ratio_VAL_2ND_Benzodiazepines,0.0012066411
+Site_C503,0.0012005519
+cumul_ratio_CCS_DIAG_257,0.001190164
+time_since_VAL_2ND_Antimetabolites,0.0011857715
+time_until_CCS_DIAG_43,0.0011820142
+cumul_ratio_CCS_PROC_198,0.0011819589
+cumul_ratio_CCS_DIAG_203,0.0011816573
+cumul_ratio_VAL_2ND_Central Muscle Relaxants,0.0011781936
+cumul_ratio_CCS_DIAG_101,0.001176884
+time_since_CCS_PROC_NA,0.0011749307
+cumul_ratio_CCS_DIAG_159,0.0011681867
+cumul_ratio_VAL_2ND_Thiazides And Thiazide-like Diuretics,0.0011586851
+time_until_CCS_PROC_177,0.001143838
+time_since_VAL_2ND_Phenothiazines,0.0011436861
+time_until_CCS_PROC_54,0.0011435457
+time_until_CCS_DIAG_108,0.001139209
+cumul_ratio_CCS_PROC_196,0.0011387446
+time_until_CCS_PROC_234,0.0011382438
+cumul_ratio_CCS_DIAG_126,0.0011309606
+cumul_ratio_CCS_DIAG_102,0.0011296327
+DAJCC_T,0.0011257807
+cumul_ratio_CCS_DIAG_659,0.001124721
+cumul_ratio_CCS_DIAG_49,0.0011230322
+cumul_ratio_CCS_PROC_NA,0.0011210778
+cumul_ratio_CCS_DIAG_48,0.0011206574
+cumul_ratio_CCS_DIAG_163,0.0011158044
+time_since_CCS_PROC_203,0.0011019559
+cumul_ratio_CCS_PROC_203,0.001098904
+cumul_ratio_CCS_DIAG_94,0.0010945394
+time_until_CCS_DIAG_4,0.0010939292
+time_since_CCS_DIAG_251,0.0010859722
+cumul_ratio_CCS_PROC_226,0.0010839826
+cumul_ratio_VAL_2ND_Corticosteroids - Topical,0.0010838179
+cumul_ratio_CCS_DIAG_117,0.0010798379
+time_until_VAL_2ND_Azithromycin,0.001078435
+time_since_VAL_2ND_Urinary Anti-infectives,0.0010752337
+time_until_CCS_DIAG_45,0.001069632
+CCS_DIAG_42,0.0010691028
+Site_C504,0.001064574
+time_since_VAL_2ND_Aminopenicillins,0.0010616343
+time_until_CCS_PROC_231,0.0010596763
+cumul_ratio_CCS_DIAG_7,0.0010478446
+time_since_VAL_2ND_Thyroid Hormones,0.0010428103
+cumul_ratio_CCS_DIAG_106,0.0010392764
+cumul_ratio_VAL_2ND_Nonsteroidal Anti-inflammatory Agents (nsaids),0.0010367207
+cumul_ratio_VAL_2ND_NA,0.0010350764
+time_since_CCS_PROC_166,0.0010331478
+cumul_ratio_CCS_PROC_213,0.0010328713
+Grade_3,0.0010269049
+time_since_VAL_2ND_Glucocorticosteroids,0.0010138471
+cumul_ratio_CCS_DIAG_259,0.0010118308
+cumul_ratio_CCS_DIAG_127,0.0010065914
+time_since_CCS_DIAG_663,0.0010056538
+cumul_ratio_VAL_2ND_Loop Diuretics,0.0010021646
+cumul_ratio_CCS_PROC_179,0.0009995289
+time_until_CCS_PROC_211,0.0009957814
+cumul_ratio_CCS_DIAG_204,0.0009939313
+CCS_PROC_234,0.0009926318
+cumul_ratio_CCS_DIAG_173,0.0009878303
+cumul_ratio_CCS_DIAG_250,0.0009869876
+time_since_CCS_PROC_198,0.0009825194
+cumul_ratio_CCS_PROC_228,0.00097398955
+time_since_CCS_PROC_163,0.00097067247
+time_since_CCS_DIAG_238,0.00097019575
+time_since_CCS_DIAG_51,0.00096724386
+cumul_ratio_CCS_DIAG_251,0.00096599926
+time_until_CCS_DIAG_42,0.0009609777
+time_since_VAL_2ND_Antineoplastic - Hormonal And Related Agents,0.00095081504
+time_since_VAL_2ND_Antihistamines - Phenothiazines,0.0009483622
+cumul_ratio_CCS_PROC_998,0.0009480431
+cumul_ratio_VAL_2ND_Urinary Anti-infectives,0.0009443514
+time_since_CCS_DIAG_239,0.0009422165
+CCS_DIAG_24,0.00093860173
+time_since_CCS_PROC_240,0.00092866365
+her2_stat_0,0.0009245488
+time_until_CCS_DIAG_50,0.00092377653
+CCS_DIAG_167,0.0009236848
+cumul_ratio_CCS_DIAG_206,0.00092201267
+time_since_VAL_2ND_Opioid Combinations,0.0009199663
+cumul_ratio_CCS_DIAG_246,0.0009191784
+time_since_CCS_DIAG_117,0.00091609405
+cumul_ratio_VAL_2ND_Beta Blockers Cardio-selective,0.0009158712
+Laterality_1,0.00091264443
+time_until_CCS_PROC_165,0.0009122512
+cumul_ratio_CCS_DIAG_52,0.0009111378
+time_until_CCS_DIAG_127,0.00090377085
+cumul_ratio_CCS_DIAG_200,0.00089138956
+cumul_ratio_VAL_2ND_Ophthalmic Anti-infectives,0.0008846518
+time_until_CCS_DIAG_110,0.00088408147
+cumul_ratio_CCS_DIAG_663,0.00088335323
+time_since_CCS_DIAG_175,0.0008805918
+cumul_ratio_VAL_2ND_Antiemetics - Anticholinergic,0.00087082176
+cumul_ratio_CCS_DIAG_208,0.0008638328
+cumul_ratio_CCS_DIAG_41,0.000863124
+cumul_ratio_CCS_DIAG_254,0.00086236134
+time_since_VAL_2ND_Ophthalmic Steroids,0.00085607765
+CCS_PROC_209,0.00085440325
+cumul_ratio_CCS_PROC_232,0.00085114053
+cumul_ratio_CCS_DIAG_258,0.00085088937
+time_since_CCS_PROC_243,0.00084758917
+cumul_ratio_CCS_DIAG_253,0.0008472771
+cumul_ratio_VAL_2ND_Tetracyclines,0.0008431149
+time_since_CCS_PROC_999,0.00084303186
+time_until_CCS_DIAG_63,0.0008401852
+cumul_ratio_CCS_DIAG_140,0.0008354469
+time_since_CCS_DIAG_256,0.0008324213
+Stage_1,0.00083228847
+cumul_ratio_CCS_DIAG_91,0.0008128421
+cumul_ratio_CCS_PROC_170,0.000812735
+cumul_ratio_VAL_2ND_Sympathomimetics,0.00080233684
+time_since_VAL_2ND_Central Muscle Relaxants,0.00080180564
+cumul_ratio_CCS_DIAG_10,0.0007984952
+time_since_CCS_DIAG_62,0.0007984549
+er_stat_0,0.0007925991
+cumul_ratio_CCS_PROC_70,0.0007925698
+time_since_VAL_2ND_Corticosteroids - Topical,0.0007804714
+time_since_CCS_DIAG_98,0.0007796877
+reg_nodes_exam,0.0007779412
+cumul_ratio_CCS_DIAG_45,0.00077660376
+time_since_CCS_DIAG_163,0.00077651616
+time_since_CCS_DIAG_47,0.00076492474
+time_until_VAL_2ND_Calcium Channel Blockers,0.0007621028
+time_until_CCS_PROC_232,0.00076165365
+cumul_ratio_CCS_PROC_214,0.00075606804
+time_since_CCS_DIAG_661,0.0007510976
+cumul_ratio_VAL_2ND_Cephalosporins - 1st Generation,0.00074501557
+time_since_VAL_2ND_Serotonin Modulators,0.00074426195
+cumul_ratio_VAL_2ND_Ace Inhibitors,0.00074160396
+cumul_ratio_CCS_DIAG_239,0.0007394935
+cumul_ratio_CCS_PROC_222,0.0007381929
+time_since_CCS_DIAG_114,0.00073518924
+cumul_ratio_VAL_2ND_Opioid Agonists,0.00073298346
+time_since_CCS_PROC_54,0.00073075306
+cumul_ratio_CCS_DIAG_231,0.000725773
+cumul_ratio_CCS_PROC_38,0.0007248697
+time_since_CCS_DIAG_108,0.0007176604
+time_since_CCS_PROC_205,0.0007100927
+time_since_CCS_DIAG_254,0.0007095915
+cumul_ratio_CCS_DIAG_89,0.00070804177
+time_since_VAL_2ND_Loop Diuretics,0.000708039
+cumul_ratio_VAL_2ND_Alpha-beta Blockers,0.0007054529
+cumul_ratio_VAL_2ND_Biguanides,0.0007031994
+time_until_CCS_PROC_178,0.0006912701
+cumul_ratio_CCS_PROC_233,0.00067852007
+cumul_ratio_CCS_DIAG_53,0.0006764573
+time_since_CCS_PROC_182,0.00067626644
+cumul_ratio_CCS_DIAG_236,0.00067595445
+time_until_CCS_DIAG_7,0.00067065563
+cumul_ratio_CCS_DIAG_209,0.0006673994
+time_since_CCS_DIAG_24,0.00066402263
+cumul_ratio_CCS_DIAG_118,0.00065897394
+time_since_CCS_PROC_63,0.0006582952
+time_until_VAL_2ND_Aminopenicillins,0.00065596687
+cumul_ratio_CCS_PROC_241,0.00065587054
+cumul_ratio_CCS_DIAG_653,0.0006553957
+time_until_VAL_2ND_Angiotensin Ii Receptor Antagonists,0.00065195124
+cumul_ratio_CCS_DIAG_149,0.00065175834
+time_until_VAL_2ND_Thyroid Hormones,0.00065100344
+time_since_CCS_PROC_177,0.0006492489
+time_until_CCS_PROC_192,0.0006377794
+time_since_CCS_DIAG_209,0.00063552597
+time_since_VAL_2ND_NA,0.0006332256
+cumul_ratio_CCS_PROC_235,0.0006282229
+time_until_VAL_2ND_5-ht3 Receptor Antagonists,0.00062137237
+time_since_CCS_DIAG_244,0.0006211846
+time_since_CCS_PROC_192,0.00062076875
+time_since_CCS_DIAG_94,0.0006190553
+time_since_CCS_DIAG_118,0.00061811635
+time_since_CCS_DIAG_43,0.0006168123
+cumul_ratio_CCS_DIAG_146,0.0006147679
+cumul_ratio_CCS_DIAG_153,0.00060614006
+cumul_ratio_CCS_DIAG_84,0.0006054179
+time_until_CCS_DIAG_259,0.00060047535
+cumul_ratio_VAL_2ND_Bone Density Regulators,0.0005994196
+months_since_dx,0.00059830525
+time_since_CCS_PROC_165,0.00059676357
+time_since_CCS_DIAG_246,0.00059661793
+surg_prim_site_V1_50,0.00059356476
+time_until_CCS_DIAG_253,0.00059108436
+cumul_ratio_CCS_PROC_193,0.00059083983
+cumul_ratio_CCS_DIAG_134,0.00058466406
+cumul_ratio_VAL_2ND_Penicillin Combinations,0.00058190053
+time_since_CCS_PROC_197,0.0005762371
+time_since_CCS_DIAG_253,0.0005757826
+time_until_CCS_PROC_999,0.000573506
+cumul_ratio_CCS_PROC_177,0.0005730455
+cumul_ratio_CCS_DIAG_151,0.0005730023
+time_until_CCS_DIAG_52,0.00056964025
+time_since_CCS_PROC_200,0.00056913565
+cumul_ratio_CCS_DIAG_657,0.00056841003
+time_until_CCS_DIAG_663,0.00056812516
+cumul_ratio_CCS_PROC_201,0.0005632958
+time_since_CCS_DIAG_92,0.00056315964
+time_since_CCS_DIAG_122,0.0005570337
+time_since_CCS_DIAG_255,0.0005513857
+time_since_CCS_DIAG_127,0.0005511968
+cumul_ratio_CCS_DIAG_138,0.00054751325
+cumul_ratio_CCS_DIAG_55,0.00054541277
+cumul_ratio_CCS_DIAG_244,0.0005405163
+surg_prim_site_V1_20,0.00054025126
+time_until_VAL_2ND_Antibiotics - Topical,0.00053804956
+cumul_ratio_CCS_DIAG_110,0.0005364024
+time_since_CCS_DIAG_134,0.0005362541
+cumul_ratio_CCS_DIAG_242,0.00053208193
+time_since_CCS_DIAG_96,0.0005277948
+time_since_CCS_DIAG_173,0.00052701007
+time_since_CCS_DIAG_45,0.0005184628
+time_since_CCS_DIAG_141,0.00051422516
+time_until_CCS_PROC_214,0.0005042211
+time_since_CCS_DIAG_204,0.0005010632
+time_until_CCS_DIAG_53,0.00050011877
+cumul_ratio_CCS_PROC_180,0.0004987276
+time_since_CCS_DIAG_7,0.0004949121
+cumul_ratio_VAL_2ND_Glucocorticosteroids,0.0004908703
+cumul_ratio_CCS_DIAG_161,0.00048434327
+time_until_VAL_2ND_Opioid Combinations,0.00047954512
+time_since_CCS_DIAG_23,0.0004769596
+Site_C509,0.0004724372
+time_until_CCS_DIAG_131,0.0004673017
+time_since_CCS_DIAG_657,0.00046484367
+Site_C508,0.00046391133
+her2_stat_9,0.0004633138
+time_until_VAL_2ND_Insulin,0.00046326642
+time_since_CCS_DIAG_250,0.0004582116
+cumul_ratio_CCS_DIAG_198,0.0004564621
+cumul_ratio_CCS_DIAG_255,0.00045216776
+time_since_CCS_DIAG_659,0.00045073355
+pr_stat_0,0.000449964
+time_since_VAL_2ND_Ophthalmic Anti-infectives,0.0004486734
+time_since_CCS_DIAG_197,0.00044774552
+cumul_ratio_CCS_DIAG_247,0.00044726316
+cumul_ratio_CCS_PROC_15,0.0004452752
+time_until_VAL_2ND_Beta Blockers Cardio-selective,0.00044079113
+cumul_ratio_CCS_PROC_206,0.00044067967
+cumul_ratio_CCS_PROC_130,0.00043767423
+time_until_CCS_DIAG_659,0.00043473757
+cumul_ratio_CCS_DIAG_105,0.00042977202
+cumul_ratio_VAL_2ND_Phenothiazines,0.00042514285
+cumul_ratio_CCS_DIAG_158,0.00042219803
+time_until_CCS_PROC_200,0.00041791517
+time_until_CCS_DIAG_48,0.00041740923
+time_since_CCS_PROC_170,0.00040686043
+time_since_CCS_DIAG_138,0.00040563755
+time_since_CCS_DIAG_140,0.00040550152
+time_since_CCS_DIAG_86,0.00040363776
+time_since_VAL_2ND_Opioid Agonists,0.00040203263
+CCS_PROC_NA,0.00039914006
+time_until_CCS_PROC_206,0.00039879215
+cumul_ratio_CCS_DIAG_143,0.000396639
+time_until_VAL_2ND_Sympathomimetics,0.00039568334
+time_since_CCS_DIAG_143,0.0003943839
+time_since_VAL_2ND_Antibiotics - Topical,0.00039306935
+cumul_ratio_CCS_DIAG_3,0.00039263445
+cumul_ratio_CCS_DIAG_122,0.00039154256
+time_since_CCS_PROC_224,0.0003906492
+time_until_CCS_PROC_202,0.00039055938
+cumul_ratio_CCS_PROC_200,0.00038996973
+time_since_CCS_DIAG_200,0.00038817016
+time_since_CCS_DIAG_125,0.00038719803
+time_since_CCS_PROC_180,0.00038233004
+cumul_ratio_CCS_DIAG_205,0.0003800945
+time_since_CCS_DIAG_63,0.00037778134
+time_until_CCS_PROC_218,0.00037750654
+cumul_ratio_CCS_DIAG_59,0.0003729769
+cumul_ratio_VAL_2ND_Lincosamides,0.00037262734
+cumul_ratio_CCS_DIAG_114,0.0003665916
+time_until_CCS_DIAG_141,0.00036569874
+CCS_DIAG_128,0.00036523247
+Grade_9,0.00036407745
+time_until_CCS_DIAG_653,0.00036169856
+time_since_CCS_PROC_193,0.000358087
+cumul_ratio_CCS_DIAG_155,0.00035314052
+time_since_CCS_PROC_178,0.00035287923
+time_since_CCS_DIAG_133,0.0003501249
+cumul_ratio_VAL_2ND_Anti-infective Misc. - Combinations,0.00034924358
+time_until_CCS_DIAG_102,0.0003491007
+VAL_2ND_NA,0.00034875778
+cumul_ratio_VAL_2ND_Hmg Coa Reductase Inhibitors,0.0003486031
+time_since_CCS_DIAG_653,0.00034833726
+cumul_ratio_CCS_PROC_202,0.00034688835
+cumul_ratio_CCS_PROC_192,0.0003397911
+cumul_ratio_CCS_DIAG_121,0.00033841011
+cumul_ratio_CCS_PROC_220,0.00033745452
+time_since_CCS_DIAG_168,0.00033740778
+time_until_CCS_PROC_240,0.00033525258
+time_until_CCS_DIAG_246,0.00033336077
+cumul_ratio_CCS_DIAG_252,0.00033131946
+cumul_ratio_CCS_DIAG_98,0.00033062432
+time_since_VAL_2ND_Serotonin-norepinephrine Reuptake Inhibitors (snris),0.00032748337
+time_since_CCS_DIAG_126,0.0003248388
+time_since_CCS_PROC_196,0.00032310735
+time_since_CCS_DIAG_49,0.00031956754
+time_since_CCS_DIAG_252,0.00031189743
+time_since_CCS_DIAG_157,0.00030799088
+time_since_CCS_DIAG_158,0.00030778084
+time_until_CCS_DIAG_198,0.00030421247
+time_until_CCS_DIAG_117,0.0003037701
+cumul_ratio_VAL_2ND_Insulin,0.00030349585
+time_since_CCS_DIAG_212,0.00030316316
+time_since_VAL_2ND_Ophthalmics - Misc.,0.0003031124
+time_until_CCS_DIAG_87,0.00030305533
+time_since_CCS_DIAG_106,0.00029980755
+time_since_CCS_PROC_226,0.0002979293
+time_since_CCS_DIAG_93,0.00029754924
+cumul_ratio_CCS_DIAG_197,0.00029731824
+cumul_ratio_CCS_DIAG_23,0.00029280968
+time_until_CCS_PROC_179,0.00029160557
+time_since_CCS_DIAG_41,0.000289687
+time_until_VAL_2ND_Antimetabolites,0.00028894964
+cumul_ratio_CCS_DIAG_62,0.00028869172
+cumul_ratio_VAL_2ND_Antimetabolites,0.00028602543
+cumul_ratio_CCS_DIAG_58,0.00028499166
+Enrolled_year,0.0002825258
+time_since_VAL_2ND_Sympathomimetics,0.00028184548
+time_until_CCS_DIAG_211,0.0002799486
+time_since_VAL_2ND_Azithromycin,0.00027968702
+time_until_VAL_2ND_Thiazides And Thiazide-like Diuretics,0.00027809927
+time_until_VAL_2ND_Antifungals - Topical,0.0002746042
+time_since_VAL_2ND_H-2 Antagonists,0.00027357208
+cumul_ratio_VAL_2ND_Nasal Steroids,0.0002725247
+cumul_ratio_VAL_2ND_Antihypertensive Combinations,0.00027225135
+Site_C502,0.00027211817
+time_since_CCS_PROC_38,0.0002713329
+time_until_CCS_DIAG_104,0.00027053803
+time_until_CCS_DIAG_167,0.00026805614
+time_since_CCS_DIAG_159,0.00026324278
+time_until_CCS_DIAG_121,0.00026068042
+time_since_CCS_DIAG_95,0.00025890287
+time_until_CCS_PROC_226,0.00025685443
+cumul_ratio_VAL_2ND_Coumarin Anticoagulants,0.00025302276
+time_since_VAL_2ND_Cephalosporins - 1st Generation,0.00025252838
+time_since_CCS_DIAG_167,0.00025000435
+time_since_CCS_PROC_236,0.00024663596
+cumul_ratio_VAL_2ND_Ophthalmics - Misc.,0.00024655656
+cumul_ratio_VAL_2ND_Antifungals - Topical,0.0002451224
+cumul_ratio_CCS_PROC_174,0.00024082397
+cumul_ratio_CCS_DIAG_131,0.00023685541
+time_since_CCS_PROC_15,0.00023618991
+time_since_CCS_PROC_232,0.00023610663
+cumul_ratio_VAL_2ND_Selective Serotonin Reuptake Inhibitors (ssris),0.00023285273
+time_since_CCS_DIAG_10,0.0002323183
+time_since_CCS_PROC_237,0.0002313494
+cumul_ratio_CCS_DIAG_96,0.00023057334
+time_since_CCS_PROC_207,0.00023054979
+time_until_CCS_DIAG_44,0.00022885115
+time_until_CCS_DIAG_651,0.00022570496
+cumul_ratio_CCS_DIAG_103,0.00022511049
+Grade_1,0.00022453353
+time_since_CCS_PROC_228,0.00022119537
+time_until_CCS_DIAG_237,0.0002195163
+time_until_CCS_PROC_239,0.00021870389
+cumul_ratio_VAL_2ND_Serotonin Modulators,0.00021631562
+cumul_ratio_CCS_PROC_163,0.0002157348
+cumul_ratio_VAL_2ND_H-2 Antagonists,0.00021317383
+time_since_CCS_PROC_213,0.00021272304
+time_until_CCS_PROC_222,0.0002117002
+time_until_CCS_DIAG_206,0.00021044363
+cumul_ratio_CCS_DIAG_47,0.00021016768
+time_until_CCS_DIAG_212,0.00020943736
+time_since_CCS_DIAG_203,0.00020550693
+cumul_ratio_CCS_DIAG_104,0.00020028376
+time_since_CCS_DIAG_59,0.00019976983
+time_since_CCS_DIAG_130,0.00019915863
+time_since_CCS_DIAG_237,0.00019514296
+time_since_CCS_DIAG_101,0.00019443757
+cumul_ratio_CCS_DIAG_109,0.0001943627
+time_until_CCS_DIAG_10,0.00019364207
+time_until_CCS_DIAG_130,0.00018376968
+time_until_VAL_2ND_Non-barbiturate Hypnotics,0.00018198781
+time_since_CCS_DIAG_44,0.00018104637
+time_until_CCS_PROC_213,0.00017981212
+time_until_CCS_DIAG_138,0.0001768624
+Stage_2,0.00017596236
+time_until_CCS_DIAG_114,0.00017160086
+time_until_VAL_2ND_Ophthalmic Steroids,0.00016940056
+time_until_VAL_2ND_Bone Density Regulators,0.00016789572
+time_until_CCS_DIAG_122,0.00016584485
+time_until_CCS_PROC_196,0.00015956619
+time_since_VAL_2ND_Beta Blockers Cardio-selective,0.00015411283
+time_since_CCS_DIAG_58,0.00015058661
+time_until_CCS_PROC_197,0.0001498651
+time_since_CCS_PROC_130,0.00014808896
+time_since_CCS_DIAG_160,0.00014743724
+time_since_VAL_2ND_Antifungals - Topical,0.00014046002
+time_until_CCS_PROC_220,0.00014045287
+cumul_ratio_CCS_DIAG_97,0.00014000434
+time_since_CCS_DIAG_104,0.00013515596
+time_until_CCS_DIAG_239,0.00013376006
+time_since_CCS_DIAG_90,0.00013184981
+time_until_CCS_DIAG_62,0.00013163761
+time_since_CCS_DIAG_97,0.0001310505
+time_until_CCS_DIAG_254,0.00013039353
+cumul_ratio_CCS_DIAG_168,0.00012921683
+time_since_VAL_2ND_Nasal Steroids,0.00012896337
+time_since_CCS_DIAG_149,0.00012747155
+cumul_ratio_CCS_DIAG_157,0.00012544253
+time_since_CCS_DIAG_4,0.00012543489
+time_until_CCS_DIAG_257,0.00012502346
+cumul_ratio_CCS_DIAG_90,0.00012422605
+cumul_ratio_CCS_DIAG_128,0.00012357168
+cumul_ratio_CCS_PROC_218,0.0001227269
+CCS_PROC_233,0.0001221844
+time_until_CCS_DIAG_173,0.00012173875
+cumul_ratio_CCS_DIAG_88,0.000120722805
+time_until_CCS_DIAG_205,0.0001185225
+cumul_ratio_VAL_2ND_Antianxiety Agents - Misc.,0.00011209855
+time_until_CCS_DIAG_49,0.00011133315
+er_stat_1,0.00011035417
+cumul_ratio_CCS_DIAG_85,0.00010969519
+time_since_CCS_PROC_206,0.00010858969
+time_until_CCS_DIAG_96,0.00010726556
+time_since_CCS_PROC_201,0.00010447277
+time_since_CCS_DIAG_232,0.00010190278
+time_since_CCS_PROC_235,0.0001001182
+cumul_ratio_CCS_DIAG_199,9.572101e-05
+time_since_CCS_DIAG_257,9.42376e-05
+time_since_CCS_PROC_155,9.212977e-05
+DAJCC_M,9.183166e-05
+time_since_CCS_PROC_174,9.0977235e-05
+time_since_VAL_2ND_Tetracyclines,8.772239e-05
+time_since_VAL_2ND_Antihistamines - Non-sedating,8.719731e-05
+time_since_CCS_DIAG_121,8.6967666e-05
+time_until_CCS_DIAG_163,8.652084e-05
+CCS_PROC_231,8.0988444e-05
+time_until_CCS_DIAG_126,7.907753e-05
+time_until_CCS_PROC_243,7.745828e-05
+time_since_VAL_2ND_Ace Inhibitors,7.669766e-05
+time_until_CCS_PROC_998,7.5439326e-05
+cumul_ratio_CCS_DIAG_93,7.5213786e-05
+time_until_CCS_DIAG_85,7.47631e-05
+CCS_PROC_240,7.0737166e-05
+time_since_CCS_DIAG_NA,7.060667e-05
+time_until_VAL_2ND_Urinary Anti-infectives,7.0264745e-05
+time_until_VAL_2ND_Antihistamines - Phenothiazines,6.923572e-05
+time_until_CCS_DIAG_203,6.5143664e-05
+time_until_CCS_PROC_67,6.219754e-05
+time_since_CCS_DIAG_651,5.5215532e-05
+time_since_CCS_PROC_234,5.3738342e-05
+VAL_2ND_Benzodiazepines,5.302528e-05
+time_since_CCS_DIAG_102,5.193781e-05
+time_since_CCS_DIAG_205,5.1836832e-05
+CCS_PROC_243,5.0792052e-05
+time_until_CCS_DIAG_204,5.0694365e-05
+CCS_DIAG_95,4.8164005e-05
+time_until_CCS_DIAG_59,4.7381072e-05
+time_until_VAL_2ND_Glucocorticosteroids,4.6856843e-05
+time_until_CCS_DIAG_91,4.6407702e-05
+time_since_CCS_PROC_171,4.5419183e-05
+time_until_CCS_DIAG_101,4.3168096e-05
+cumul_ratio_VAL_2ND_Cephalosporins - 2nd Generation,4.235114e-05
+time_until_CCS_DIAG_250,4.010448e-05
+time_until_CCS_DIAG_133,3.962321e-05
+time_until_CCS_DIAG_97,3.8426617e-05
+time_until_CCS_PROC_207,3.727443e-05
+time_until_CCS_DIAG_89,3.2478827e-05
+time_until_CCS_PROC_193,3.2268035e-05
+time_until_CCS_DIAG_251,3.2031203e-05
+time_until_VAL_2ND_Nonsteroidal Anti-inflammatory Agents (nsaids),3.0753796e-05
+time_until_CCS_DIAG_106,2.9664761e-05
+time_until_CCS_DIAG_151,2.7194728e-05
+time_since_VAL_2ND_Nonsteroidal Anti-inflammatory Agents (nsaids),2.5583524e-05
+time_until_CCS_PROC_236,2.3347888e-05
+time_until_CCS_DIAG_120,2.2748562e-05
+CCS_PROC_227,2.1376154e-05
+time_until_CCS_PROC_235,2.0068486e-05
+time_until_CCS_PROC_233,1.6429241e-05
+time_until_CCS_DIAG_58,1.2434925e-05
+time_until_CCS_PROC_209,7.5632447e-06
+CCS_DIAG_97,0.0
+CCS_PROC_197,0.0
+CCS_DIAG_50,0.0
+cumul_ratio_CCS_DIAG_83,0.0
+CCS_DIAG_51,0.0
+CCS_PROC_201,0.0
+cumul_ratio_CCS_DIAG_207,0.0
+CCS_PROC_200,0.0
+CCS_PROC_198,0.0
+CCS_DIAG_52,0.0
+CCS_PROC_203,0.0
+CCS_DIAG_53,0.0
+CCS_DIAG_55,0.0
+CCS_DIAG_58,0.0
+CCS_DIAG_59,0.0
+CCS_DIAG_62,0.0
+CCS_DIAG_63,0.0
+cumul_ratio_CCS_DIAG_63,0.0
+CCS_PROC_202,0.0
+CCS_DIAG_49,0.0
+CCS_PROC_205,0.0
+CCS_DIAG_657,0.0
+CCS_DIAG_45,0.0
+CCS_PROC_228,0.0
+CCS_PROC_226,0.0
+CCS_PROC_224,0.0
+CCS_PROC_222,0.0
+CCS_PROC_220,0.0
+CCS_PROC_218,0.0
+CCS_PROC_217,0.0
+CCS_PROC_214,0.0
+CCS_DIAG_47,0.0
+CCS_PROC_213,0.0
+CCS_PROC_211,0.0
+CCS_PROC_207,0.0
+CCS_DIAG_48,0.0
+CCS_PROC_206,0.0
+CCS_DIAG_651,0.0
+CCS_DIAG_659,0.0
+CCS_DIAG_98,0.0
+CCS_PROC_163,0.0
+CCS_DIAG_89,0.0
+CCS_DIAG_90,0.0
+CCS_PROC_167,0.0
+CCS_DIAG_91,0.0
+CCS_PROC_166,0.0
+CCS_PROC_165,0.0
+CCS_DIAG_92,0.0
+CCS_PROC_155,0.0
+CCS_PROC_171,0.0
+CCS_PROC_15,0.0
+CCS_PROC_130,0.0
+CCS_DIAG_93,0.0
+CCS_DIAG_94,0.0
+CCS_DIAG_NA,0.0
+CCS_DIAG_99,0.0
+CCS_DIAG_96,0.0
+CCS_PROC_170,0.0
+CCS_PROC_174,0.0
+CCS_DIAG_661,0.0
+CCS_DIAG_83,0.0
+CCS_DIAG_663,0.0
+CCS_PROC_196,0.0
+CCS_DIAG_7,0.0
+CCS_PROC_193,0.0
+CCS_DIAG_81,0.0
+CCS_PROC_192,0.0
+CCS_PROC_182,0.0
+CCS_DIAG_84,0.0
+CCS_DIAG_88,0.0
+CCS_DIAG_85,0.0
+CCS_PROC_180,0.0
+CCS_PROC_179,0.0
+CCS_DIAG_86,0.0
+cumul_ratio_CCS_DIAG_235,0.0
+CCS_PROC_178,0.0
+CCS_DIAG_87,0.0
+CCS_PROC_177,0.0
+time_since_VAL_2ND_Alpha-beta Blockers,0.0
+CCS_DIAG_44,0.0
+CCS_DIAG_130,0.0
+CCS_DIAG_110,0.0
+CCS_DIAG_117,0.0
+CCS_DIAG_118,0.0
+cumul_ratio_VAL_2ND_Antiperistaltic Agents,0.0
+CCS_DIAG_120,0.0
+CCS_DIAG_121,0.0
+CCS_DIAG_122,0.0
+CCS_DIAG_125,0.0
+CCS_DIAG_126,0.0
+CCS_DIAG_127,0.0
+cumul_ratio_VAL_2ND_Antibiotics - Topical,0.0
+CCS_DIAG_131,0.0
+CCS_DIAG_108,0.0
+cumul_ratio_VAL_2ND_Angiotensin Ii Receptor Antagonists,0.0
+CCS_DIAG_133,0.0
+CCS_DIAG_134,0.0
+CCS_DIAG_138,0.0
+CCS_DIAG_140,0.0
+CCS_DIAG_141,0.0
+CCS_DIAG_143,0.0
+CCS_DIAG_146,0.0
+CCS_DIAG_149,0.0
+CCS_DIAG_151,0.0
+CCS_DIAG_153,0.0
+CCS_DIAG_109,0.0
+CCS_DIAG_106,0.0
+CCS_DIAG_43,0.0
+surg_prim_site_V1_30,0.0
+Race_2,0.0
+Race_3,0.0
+Site_C500,0.0
+Site_C501,0.0
+Site_C506,0.0
+Laterality_2,0.0
+Laterality_3,0.0
+Laterality_4,0.0
+Laterality_9,0.0
+pr_stat_1,0.0
+her2_stat_1,0.0
+surg_prim_site_V1_60,0.0
+CCS_DIAG_105,0.0
+surg_prim_site_V1_70,0.0
+surg_prim_site_V1_80,0.0
+surg_prim_site_V1_90,0.0
+surg_prim_site_V1_NA,0.0
+cumul_ratio_VAL_2ND_Herpes Agents,0.0
+cumul_ratio_VAL_2ND_Heparins And Heparinoid-like Agents,0.0
+CCS_DIAG_10,0.0
+CCS_DIAG_101,0.0
+CCS_DIAG_102,0.0
+CCS_DIAG_103,0.0
+CCS_DIAG_104,0.0
+CCS_DIAG_154,0.0
+CCS_DIAG_155,0.0
+CCS_DIAG_157,0.0
+CCS_DIAG_251,0.0
+CCS_DIAG_235,0.0
+CCS_DIAG_236,0.0
+CCS_DIAG_237,0.0
+CCS_DIAG_238,0.0
+CCS_DIAG_239,0.0
+CCS_DIAG_242,0.0
+CCS_DIAG_244,0.0
+CCS_DIAG_245,0.0
+CCS_DIAG_246,0.0
+CCS_DIAG_247,0.0
+CCS_DIAG_250,0.0
+cumul_ratio_CCS_PROC_171,0.0
+CCS_DIAG_158,0.0
+CCS_DIAG_252,0.0
+CCS_DIAG_253,0.0
+CCS_DIAG_254,0.0
+CCS_DIAG_255,0.0
+CCS_DIAG_256,0.0
+CCS_DIAG_257,0.0
+CCS_DIAG_258,0.0
+CCS_DIAG_259,0.0
+CCS_DIAG_3,0.0
+CCS_DIAG_4,0.0
+CCS_DIAG_41,0.0
+CCS_DIAG_232,0.0
+CCS_DIAG_231,0.0
+cumul_ratio_CCS_PROC_205,0.0
+CCS_DIAG_230,0.0
+CCS_DIAG_159,0.0
+CCS_DIAG_160,0.0
+CCS_DIAG_161,0.0
+CCS_DIAG_163,0.0
+CCS_DIAG_168,0.0
+CCS_DIAG_173,0.0
+CCS_DIAG_175,0.0
+CCS_DIAG_19,0.0
+CCS_DIAG_197,0.0
+CCS_DIAG_198,0.0
+CCS_DIAG_199,0.0
+CCS_DIAG_2,0.0
+CCS_DIAG_200,0.0
+CCS_DIAG_203,0.0
+CCS_DIAG_204,0.0
+CCS_DIAG_206,0.0
+CCS_DIAG_207,0.0
+CCS_DIAG_208,0.0
+CCS_DIAG_209,0.0
+CCS_DIAG_21,0.0
+CCS_DIAG_211,0.0
+CCS_DIAG_212,0.0
+CCS_DIAG_23,0.0
+CCS_DIAG_205,0.0
+time_until_VAL_2ND_H-2 Antagonists,0.0
+CCS_PROC_232,0.0
+time_until_CCS_DIAG_247,0.0
+time_since_CCS_DIAG_120,0.0
+time_since_CCS_DIAG_128,0.0
+time_since_CCS_DIAG_146,0.0
+time_since_CCS_DIAG_153,0.0
+time_until_CCS_DIAG_3,0.0
+time_since_CCS_DIAG_19,0.0
+time_until_CCS_DIAG_258,0.0
+time_since_CCS_DIAG_198,0.0
+time_until_CCS_DIAG_255,0.0
+time_since_CCS_DIAG_2,0.0
+time_until_CCS_DIAG_252,0.0
+time_until_CCS_DIAG_245,0.0
+time_since_CCS_DIAG_109,0.0
+time_until_CCS_DIAG_244,0.0
+time_until_CCS_DIAG_242,0.0
+time_until_CCS_DIAG_238,0.0
+time_until_CCS_DIAG_236,0.0
+time_until_CCS_DIAG_235,0.0
+time_until_CCS_DIAG_232,0.0
+time_until_CCS_DIAG_231,0.0
+time_until_CCS_DIAG_230,0.0
+time_until_CCS_DIAG_23,0.0
+time_until_CCS_DIAG_21,0.0
+time_until_CCS_DIAG_209,0.0
+time_since_CCS_DIAG_110,0.0
+time_since_CCS_DIAG_103,0.0
+CCS_PROC_235,0.0
+VAL_2ND_Serotonin Modulators,0.0
+time_until_CCS_PROC_171,0.0
+time_until_CCS_PROC_170,0.0
+VAL_2ND_Proton Pump Inhibitors,0.0
+time_until_CCS_PROC_166,0.0
+VAL_2ND_Selective Serotonin Reuptake Inhibitors (ssris),0.0
+time_until_CCS_PROC_163,0.0
+time_until_CCS_PROC_155,0.0
+time_until_CCS_PROC_15,0.0
+time_until_CCS_PROC_130,0.0
+time_until_CCS_DIAG_NA,0.0
+time_until_CCS_DIAG_99,0.0
+VAL_2ND_Serotonin-norepinephrine Reuptake Inhibitors (snris),0.0
+time_until_CCS_DIAG_661,0.0
+VAL_2ND_Sympathomimetics,0.0
+time_until_CCS_DIAG_93,0.0
+time_until_CCS_DIAG_92,0.0
+time_until_CCS_DIAG_90,0.0
+time_until_CCS_DIAG_88,0.0
+VAL_2ND_Tetracyclines,0.0
+VAL_2ND_Thiazides And Thiazide-like Diuretics,0.0
+VAL_2ND_Thyroid Hormones,0.0
+time_until_CCS_DIAG_83,0.0
+time_until_CCS_DIAG_81,0.0
+VAL_2ND_Urinary Anti-infectives,0.0
+time_until_CCS_DIAG_208,0.0
+time_until_CCS_DIAG_207,0.0
+time_until_CCS_DIAG_200,0.0
+time_since_VAL_2ND_Coumarin Anticoagulants,0.0
+time_since_CCS_DIAG_50,0.0
+time_since_CCS_DIAG_83,0.0
+time_since_VAL_2ND_Selective Serotonin Reuptake Inhibitors (ssris),0.0
+time_since_VAL_2ND_Proton Pump Inhibitors,0.0
+time_since_CCS_DIAG_85,0.0
+time_since_VAL_2ND_Non-barbiturate Hypnotics,0.0
+time_since_VAL_2ND_Nitrates,0.0
+time_since_VAL_2ND_Lincosamides,0.0
+time_since_VAL_2ND_Insulin,0.0
+time_since_VAL_2ND_Imidazole-related Antifungals,0.0
+time_since_CCS_PROC_202,0.0
+time_since_CCS_PROC_218,0.0
+time_since_CCS_DIAG_21,0.0
+time_since_CCS_PROC_222,0.0
+time_since_CCS_PROC_227,0.0
+time_since_VAL_2ND_Calcium Channel Blockers,0.0
+time_since_VAL_2ND_Biguanides,0.0
+time_since_CCS_PROC_233,0.0
+time_since_VAL_2ND_Antiemetics - Anticholinergic,0.0
+time_since_CCS_PROC_39,0.0
+time_since_CCS_PROC_70,0.0
+time_since_VAL_2ND_Antianxiety Agents - Misc.,0.0
+time_since_VAL_2ND_Anti-infective Misc. - Combinations,0.0
+time_since_VAL_2ND_Anti-infective Agents - Misc.,0.0
+time_until_CCS_DIAG_103,0.0
+time_until_CCS_DIAG_105,0.0
+time_until_CCS_DIAG_109,0.0
+time_since_CCS_DIAG_3,0.0
+time_until_CCS_DIAG_199,0.0
+time_since_CCS_DIAG_231,0.0
+time_until_CCS_DIAG_197,0.0
+time_until_CCS_DIAG_19,0.0
+time_until_CCS_DIAG_175,0.0
+time_until_CCS_DIAG_168,0.0
+time_until_CCS_DIAG_160,0.0
+time_until_CCS_DIAG_159,0.0
+time_until_CCS_DIAG_158,0.0
+time_until_CCS_DIAG_157,0.0
+time_until_CCS_DIAG_155,0.0
+time_since_CCS_DIAG_235,0.0
+time_until_CCS_DIAG_153,0.0
+time_until_CCS_DIAG_149,0.0
+time_until_CCS_DIAG_146,0.0
+time_since_CCS_DIAG_236,0.0
+time_until_CCS_DIAG_140,0.0
+time_until_CCS_DIAG_134,0.0
+time_since_CCS_DIAG_242,0.0
+time_until_CCS_DIAG_128,0.0
+time_until_CCS_DIAG_125,0.0
+time_until_CCS_DIAG_118,0.0
+time_since_CCS_DIAG_259,0.0
+time_until_CCS_PROC_174,0.0
+VAL_2ND_Phenothiazines,0.0
+VAL_2ND_Penicillin Combinations,0.0
+time_until_VAL_2ND_NA,0.0
+time_until_VAL_2ND_Serotonin Modulators,0.0
+time_until_VAL_2ND_Selective Serotonin Reuptake Inhibitors (ssris),0.0
+time_until_VAL_2ND_Proton Pump Inhibitors,0.0
+time_until_VAL_2ND_Phenothiazines,0.0
+VAL_2ND_Antihistamines - Non-sedating,0.0
+VAL_2ND_Antihistamines - Phenothiazines,0.0
+VAL_2ND_Antihypertensive Combinations,0.0
+time_until_VAL_2ND_Ophthalmics - Misc.,0.0
+VAL_2ND_Antimetabolites,0.0
+time_until_VAL_2ND_Nitrates,0.0
+VAL_2ND_Antineoplastic - Hormonal And Related Agents,0.0
+time_until_VAL_2ND_Loop Diuretics,0.0
+time_until_VAL_2ND_Central Muscle Relaxants,0.0
+VAL_2ND_Antiperistaltic Agents,0.0
+time_until_VAL_2ND_Lincosamides,0.0
+VAL_2ND_Azithromycin,0.0
+time_until_VAL_2ND_Imidazole-related Antifungals,0.0
+time_until_VAL_2ND_Herpes Agents,0.0
+time_until_VAL_2ND_Heparins And Heparinoid-like Agents,0.0
+time_until_VAL_2ND_Fluoroquinolones,0.0
+time_until_VAL_2ND_Coumarin Anticoagulants,0.0
+time_until_VAL_2ND_Corticosteroids - Topical,0.0
+time_until_VAL_2ND_Cephalosporins - 3rd Generation,0.0
+time_until_VAL_2ND_Cephalosporins - 2nd Generation,0.0
+VAL_2ND_Antifungals - Topical,0.0
+VAL_2ND_Antiemetics - Anticholinergic,0.0
+time_until_VAL_2ND_Tetracyclines,0.0
+VAL_2ND_Anticonvulsants - Misc.,0.0
+CCS_PROC_236,0.0
+CCS_PROC_237,0.0
+CCS_PROC_239,0.0
+CCS_PROC_241,0.0
+CCS_PROC_38,0.0
+CCS_PROC_39,0.0
+CCS_PROC_54,0.0
+CCS_PROC_63,0.0
+CCS_PROC_67,0.0
+CCS_PROC_7,0.0
+CCS_PROC_70,0.0
+CCS_PROC_76,0.0
+CCS_PROC_998,0.0
+CCS_PROC_999,0.0
+VAL_2ND_5-ht3 Receptor Antagonists,0.0
+VAL_2ND_Ace Inhibitors,0.0
+VAL_2ND_Alpha-beta Blockers,0.0
+VAL_2ND_Aminopenicillins,0.0
+VAL_2ND_Angiotensin Ii Receptor Antagonists,0.0
+VAL_2ND_Anti-infective Agents - Misc.,0.0
+VAL_2ND_Anti-infective Misc. - Combinations,0.0
+VAL_2ND_Antianxiety Agents - Misc.,0.0
+VAL_2ND_Antibiotics - Topical,0.0
+time_until_VAL_2ND_Cephalosporins - 1st Generation,0.0
+VAL_2ND_Beta Blockers Cardio-selective,0.0
+VAL_2ND_Opioid Combinations,0.0
+time_until_CCS_PROC_217,0.0
+time_until_CCS_PROC_38,0.0
+time_until_CCS_PROC_241,0.0
+VAL_2ND_Herpes Agents,0.0
+time_until_CCS_PROC_237,0.0
+VAL_2ND_Hmg Coa Reductase Inhibitors,0.0
+VAL_2ND_Imidazole-related Antifungals,0.0
+VAL_2ND_Insulin,0.0
+VAL_2ND_Lincosamides,0.0
+time_until_CCS_PROC_227,0.0
+VAL_2ND_Local Anesthetics - Topical,0.0
+VAL_2ND_Loop Diuretics,0.0
+VAL_2ND_Nasal Steroids,0.0
+time_until_VAL_2ND_Biguanides,0.0
+VAL_2ND_Nitrates,0.0
+VAL_2ND_Non-barbiturate Hypnotics,0.0
+time_until_CCS_PROC_205,0.0
+time_until_CCS_PROC_203,0.0
+VAL_2ND_Nonsteroidal Anti-inflammatory Agents (nsaids),0.0
+VAL_2ND_Ophthalmic Anti-infectives,0.0
+VAL_2ND_Ophthalmic Steroids,0.0
+time_until_CCS_PROC_198,0.0
+VAL_2ND_Ophthalmics - Misc.,0.0
+VAL_2ND_Opioid Agonists,0.0
+time_until_CCS_PROC_180,0.0
+time_until_CCS_PROC_39,0.0
+VAL_2ND_Heparins And Heparinoid-like Agents,0.0
+time_until_CCS_PROC_63,0.0
+time_until_CCS_PROC_7,0.0
+VAL_2ND_Biguanides,0.0
+time_until_VAL_2ND_Benzodiazepines,0.0
+VAL_2ND_Bone Density Regulators,0.0
+time_until_VAL_2ND_Antiperistaltic Agents,0.0
+VAL_2ND_Calcium Channel Blockers,0.0
+VAL_2ND_Central Muscle Relaxants,0.0
+VAL_2ND_Cephalosporins - 1st Generation,0.0
+time_until_VAL_2ND_Antihistamines - Non-sedating,0.0
+time_until_VAL_2ND_Antiemetics - Anticholinergic,0.0
+time_until_VAL_2ND_Anticonvulsants - Misc.,0.0
+VAL_2ND_Cephalosporins - 2nd Generation,0.0
+time_until_VAL_2ND_Antianxiety Agents - Misc.,0.0
+time_until_VAL_2ND_Anti-infective Misc. - Combinations,0.0
+time_until_VAL_2ND_Anti-infective Agents - Misc.,0.0
+VAL_2ND_Cephalosporins - 3rd Generation,0.0
+VAL_2ND_Corticosteroids - Topical,0.0
+time_until_VAL_2ND_Alpha-beta Blockers,0.0
+time_until_VAL_2ND_Ace Inhibitors,0.0
+VAL_2ND_Coumarin Anticoagulants,0.0
+VAL_2ND_Fluoroquinolones,0.0
+VAL_2ND_Glucocorticosteroids,0.0
+VAL_2ND_H-2 Antagonists,0.0
+time_until_CCS_PROC_70,0.0
+time_since_VAL_2ND_Heparins And Heparinoid-like Agents,0.0
