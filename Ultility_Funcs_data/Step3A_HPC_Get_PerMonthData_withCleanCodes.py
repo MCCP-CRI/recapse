@@ -85,7 +85,7 @@ def Step3A_HPC_Get_PerMonthData_withCleanCodes(user_name, path_input, path_outpu
     
     for i in range(len(analysis_ID)): #len(analysis_ID)
         curr_id = str(int(analysis_ID[i]))
-        #print(curr_id)
+        print(curr_id)
         data_res = read_allClaims(curr_id, path_medicaid_heath, path_medicaid_pharm, path_medicare, medicaid_columns_list_health, medicaid_columns_list_pharm, medicare_columns_list)
          
         #1. Read all raw claims, if not aval, return NULL
@@ -136,7 +136,9 @@ def Step3A_HPC_Get_PerMonthData_withCleanCodes(user_name, path_input, path_outpu
         ICD_procedure_cols2 = ['PRCDR_CD{}'.format(j) for j in range(1, 25+1)]  #ICD9 or ICD10
         ICD_all_cols2 = ICD_diag_cols2 + ICD_procedure_cols2
         if flag_NDC_drug_cols2 == 0:
-            NDC_drug_cols2 = ["NDC_CD","PROD_SRVC_ID"] 
+            NDC_drug_cols_test = ["NDC_CD","PROD_SRVC_ID"] 
+            NDC_drug_cols2 = [col for col in NDC_drug_cols_test if col in medicare_df.columns]
+
         else:
             NDC_drug_cols2 = ["PROD_SRVC_ID"] 
         medicare_drug_related = ["GNN","BN"]
