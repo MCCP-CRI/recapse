@@ -15,11 +15,15 @@ from datetime import datetime
 from dateutil import relativedelta
 
 
-def Step11E_merge_all(user_name, path_output):
+def Step11E_merge_all(user_name, path_output, drug_code):
 
    ### HPC
-   path_csv = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandVAL2nd'
-   path_save = str(path_output) + "/" +str(user_name) + '/11E_merged_All_CCSandVAL2nd'
+   if drug_code == "VAL_2ND":
+      path_csv = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandVAL2nd'
+      path_save = str(path_output) + "/" +str(user_name) + '/11E_merged_All_CCSandVAL2nd'
+   else:
+      path_csv = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandDM3SPE'
+      path_save = str(path_output) + "/" +str(user_name) + '/11E_merged_All_CCSandDM3SPE'
    path_ID = str(path_output) + "/" +str(user_name) + '/1_ID_Sources_Info'
    
    
@@ -60,8 +64,10 @@ def Step11E_merge_all(user_name, path_output):
    #file_name = "All_11E_CCSandVAL2nd.csv"
    #completeName = os.path.join(path_save, file_name)
    #df_append.to_csv(completeName, index=False) 
-   
-   file_name = "All_11E_CCSandVAL2nd.pkl"
+   if drug_code == "VAL_2ND":
+      file_name = "All_11E_CCSandVAL2nd.pkl"
+   else:
+      file_name = "All_11E_CCSandDM3SPE.pkl"
    completeName = os.path.join(path_save, file_name)
    df_append.to_pickle(completeName)
    
