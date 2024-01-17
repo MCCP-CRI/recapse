@@ -14,13 +14,20 @@ from datetime import date
 from datetime import datetime
 from dateutil import relativedelta
 
-def Step11D_Get_ModelReady_Combed_Features(user_name, path_output):
+def Step11D_Get_ModelReady_Combed_Features(user_name, path_output, drug_code):
 
    ### HPC
-   path_csv1 = str(path_output) + "/" +str(user_name) + '/11A_ModelReady_GrpFeature_CCSandVAL2ND'
-   path_csv2 = str(path_output) + "/" +str(user_name) + '/11B_ModelReady_CharFeature'
-   path_csv3 = str(path_output) + "/" +str(user_name) + '/11C_ModelReady_TransformFeatures_CCSandVAL2nd'
-   path_save = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandVAL2nd'
+   if drug_code == "VAL_2ND":
+      path_csv1 = str(path_output) + "/" +str(user_name) + '/11A_ModelReady_GrpFeature_CCSandVAL2ND'
+      path_csv2 = str(path_output) + "/" +str(user_name) + '/11B_ModelReady_CharFeature'
+      path_csv3 = str(path_output) + "/" +str(user_name) + '/11C_ModelReady_TransformFeatures_CCSandVAL2nd'
+      path_save = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandVAL2nd'
+   else:
+      path_csv1 = str(path_output) + "/" +str(user_name) + '/11A_ModelReady_GrpFeature_CCSandDM3SPE'
+      path_csv2 = str(path_output) + "/" +str(user_name) + '/11B_ModelReady_CharFeature'
+      path_csv3 = str(path_output) + "/" +str(user_name) + '/11C_ModelReady_TransformFeatures_CCSandDM3SPE'
+      path_save = str(path_output) + "/" +str(user_name) + '/11D_ModelReady_CombFatures_CCSandDM3SPE'
+
    path_ID = str(path_output) + "/" +str(user_name) + '/1_ID_Sources_Info'
         
    isExist = os.path.exists(path_save)
