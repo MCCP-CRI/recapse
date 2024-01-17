@@ -111,7 +111,8 @@ def Step3B_HPC_Get_PerMonthData_withCleanCodes_onlymedicare(user_name, path_inpu
         ICD_procedure_cols2 = ['PRCDR_CD{}'.format(j) for j in range(1, 25+1)]  #ICD9 or ICD10
         ICD_all_cols2 = ICD_diag_cols2 + ICD_procedure_cols2
         if flag_NDC_drug_cols2 == 0:
-            NDC_drug_cols2 = ["NDC_CD","PROD_SRVC_ID"] 
+            NDC_drug_cols_test = ["NDC_CD","PROD_SRVC_ID"] 
+            NDC_drug_cols2 = [col for col in NDC_drug_cols_test if col in medicare_df.columns]
         else:
             NDC_drug_cols2 = ["PROD_SRVC_ID"] 
         medicare_drug_related = ["GNN","BN"]
