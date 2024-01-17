@@ -141,9 +141,9 @@ if __name__ == '__main__':
         Step10F_Get_PerMonth_VAL2NDROOT_AllEnrolls(user_name, indir, outdir)
     Step11A_Get_ModelReady_SelectedGroupFeature(user_name, indir, outdir, drug_code)
     Step11B_Get_ModelReady_BinaryCharFeatures(user_name, outdir)
-    Step11C_Get_ModelReady_TransformationFeature(user_name, outdir)
-    Step11D_Get_ModelReady_Combed_Features(user_name, outdir)
-    Step11E_merge_all(user_name, outdir)
+    Step11C_Get_ModelReady_TransformationFeature(user_name, outdir, drug_code)
+    Step11D_Get_ModelReady_Combed_Features(user_name, outdir, drug_code)
+    Step11E_merge_all(user_name, outdir, drug_code)
     
     
 
