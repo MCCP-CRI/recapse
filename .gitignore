@@ -262,3 +262,5 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,flask
 
 Input_data_preprocessing_steps/
+**/results
+**/output
