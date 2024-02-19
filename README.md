@@ -22,3 +22,4 @@ To start the web application, execute `flask run`. This will start up a process 
 Running as a docker container
 ===
 To start the docker container, run `docker run -d kcr/recapse-api:latest`
+
