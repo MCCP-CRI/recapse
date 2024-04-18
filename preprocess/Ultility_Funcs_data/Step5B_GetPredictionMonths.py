@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 
 
 def Step5B_GetPredictionMonths(user_name, path_input, path_output, metacsv):
@@ -95,5 +95,4 @@ def Step5B_GetPredictionMonths(user_name, path_input, path_output, metacsv):
     ID_Sources_data.to_csv(completeName, index=False)
     
     print("Step 5B done, new All_ID_Source_prediction_Months.csv file generated")
-    
     

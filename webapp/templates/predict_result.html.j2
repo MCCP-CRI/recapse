@@ -1,0 +1,54 @@
+{% extends 'base.html.j2' %}
+
+{% block header %}
+    <h1>{% block title %}Prediction{% endblock %}</h1>
+    <script>
+    window.onload = function() {
+        // Create a hidden anchor element
+        const link = document.createElement('a');
+        link.href = "{{ url_for("views.download_predict", work_dir=work_dir) }}";
+        // Simulate a click on the anchor element
+        link.click();
+    };
+    </script>
+{% endblock %}
+
+{% block content %}
+    <h2>Prediction Result</h2>
+    <p>Full prediction output files will download momentarily. Here are summary statistics from the prediction run.</p>
+    <p><strong>Number of patients:</strong> {{ results['count'] }}</p>
+    <p><strong>Number of recurrences predicted:</strong> {{ results['recurrences'] }}</p>
+    <h3>By Race</h3>
+    <table>
+        <tr>
+            <th>&nbsp;</th><th>Total</th><th>Recurrences</th>
+        </tr>
+        {% for key in results['by_race'] %}
+        <tr>
+            <th>{{ key }}</th><td>{{ results['by_race'][key][0] }}</td><td>{{ results['by_race'][key][1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>By Stage</h3>
+    <table>
+        <tr>
+            <th>&nbsp;</th><th>Total</th><th>Recurrences</th>
+        </tr>
+        {% for key in results['by_stage'] %}
+        <tr>
+            <th>{{ key }}</th><td>{{ results['by_stage'][key][0] }}</td><td>{{ results['by_stage'][key][1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>By Diagnosis Year</h3>
+    <table>
+        <tr>
+            <th>&nbsp;</th><th>Total</th><th>Recurrences</th>
+        </tr>
+        {% for key in results['by_year'] %}
+        <tr>
+            <th>{{ key }}</th><td>{{ results['by_year'][key][0] }}</td><td>{{ results['by_year'][key][1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

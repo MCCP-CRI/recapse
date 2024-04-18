@@ -1,0 +1,12 @@
+{% extends 'base.html.j2' %}
+
+{% block header %}
+  <h1>{% block title %}Main{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <h2>User Guide</h2>
+  <p>RECAPSE is an XGBoost model for predicting cancer recurrence events based on insurance enrollment and claims data.</p>
+  <p>The first step is to preprocess the data. This is a time-consuming step that generates two files needed for the prediction step.</p>
+  <p>After the preprocessed data is generated, the data can be fed through the model to generate predictions.</p>
+{% endblock %}

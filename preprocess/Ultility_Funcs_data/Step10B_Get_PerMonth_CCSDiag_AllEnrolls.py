@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 from datetime import date
 from datetime import datetime
 from dateutil import relativedelta
@@ -33,8 +33,8 @@ def Step10B_Get_PerMonth_CCSDiag_AllEnrolls(user_name, path_input, path_output):
     ################################################################################
     #1.Load group df
     ################################################################################
-    file_name = "Unique_Diag_And_Groups_inALLClaims.xlsx"
-    completeName = os.path.join(path_code, file_name)
+    file_name = "../group_defs/Unique_Diag_And_Groups_inALLClaims.xlsx"
+    completeName = os.path.join(os.path.dirname(__file__), file_name)
     diag_grp_df = pd.read_excel(completeName,header=0, index_col=False, dtype={'CCS_CATEGORY': str})
     
     #reformat 
@@ -114,4 +114,3 @@ def Step10B_Get_PerMonth_CCSDiag_AllEnrolls(user_name, path_input, path_output):
     
     
     
-            

@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 
 
 def Step4B_GetEventType_addNewothers(user_name, path_input, path_output, metacsv):
@@ -248,7 +248,6 @@ def Step4B_GetEventType_addNewothers(user_name, path_input, path_output, metacsv
     
     
     print('4B done')
-    
     
     
     

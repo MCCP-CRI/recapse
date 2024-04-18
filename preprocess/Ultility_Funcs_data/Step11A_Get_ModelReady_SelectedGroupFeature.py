@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 from datetime import date
 from datetime import datetime
 from dateutil import relativedelta
@@ -34,11 +34,11 @@ def Step11A_Get_ModelReady_SelectedGroupFeature(user_name, path_input, path_outp
     if drug_code == "DM3_SPE" :  #VAL_2ND
         path_save = path_save1
         path_drug = path_drug1
-        file_name_drug = "Selected_DM3SPEDrug_Unique_Grps.xlsx"
+        file_name_drug = "../group_defs/Selected_DM3SPEDrug_Unique_Grps.xlsx"
     else:
         path_save = path_save2
         path_drug = path_drug2
-        file_name_drug = "Selected_VAL2ndDrug_Unique_Grps.xlsx"
+        file_name_drug = "../group_defs/Selected_VAL2ndDrug_Unique_Grps.xlsx"
         
            
     isExist = os.path.exists(path_save)
@@ -64,16 +64,16 @@ def Step11A_Get_ModelReady_SelectedGroupFeature(user_name, path_input, path_outp
     ################################################################################
     #2.Load group df
     ################################################################################
-    file_name = "Selected_CCSDiag_Unique_Grps.xlsx"
-    completeName = os.path.join(path_feat, file_name)
+    file_name = "../group_defs/Selected_CCSDiag_Unique_Grps.xlsx"
+    completeName = os.path.join(os.path.dirname(__file__), file_name)
     modelready_grps_df1 = pd.read_excel(completeName,header=0, index_col=False)#, dtype={'CODE': str})
     
-    file_name = "Selected_CCSProc_Unique_Grps.xlsx"
-    completeName = os.path.join(path_feat, file_name)
+    file_name = "../group_defs/Selected_CCSProc_Unique_Grps.xlsx"
+    completeName = os.path.join(os.path.dirname(__file__), file_name)
     modelready_grps_df2 = pd.read_excel(completeName,header=0, index_col=False)#, dtype={'CODE': str})
     
     ####drug
-    completeName = os.path.join(path_feat, file_name_drug)
+    completeName = os.path.join(os.path.dirname(__file__), file_name_drug)
     modelready_grps_df3 = pd.read_excel(completeName,header=0, index_col=False)#, dtype={'CODE': str})
     
     
@@ -139,4 +139,3 @@ def Step11A_Get_ModelReady_SelectedGroupFeature(user_name, path_input, path_outp
     print('Step 11A done')
                 
         
-            

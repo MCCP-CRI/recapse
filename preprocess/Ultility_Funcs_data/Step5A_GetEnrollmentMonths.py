@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 
 
 def Step5A_GetEnrollmentMonths(user_name, path_input, path_output, mecaidEnroll, month_len_medicaid, start_medicaid, mecareEnroll, month_len_medicare, start_medicare):
@@ -336,4 +336,3 @@ def Step5A_GetEnrollmentMonths2(user_name, path_input, path_output, mecaidEnroll
     all_enrollment_months_df.to_csv(completeName, index=False)
     
     print("Step 5A only Medicaid done")
-    

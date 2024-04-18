@@ -1,0 +1,30 @@
+{% extends 'base.html.j2' %}
+
+{% block header %}
+    <h1>{% block title %}Tasks{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <h2>All Tasks</h2>
+    <table>
+        <tr>
+            <th>Task ID</th><th>State</th><th>Info</th>
+        </tr>
+        {% for ts in task_status %}
+            <tr>
+                <th>{{ ts['task_name'] }}</th>
+                <td>{{ ts['task_status'] }}</td>
+                <td>
+                    {% if ts['task_status'] == 'FINISHED' %}
+                    <a href="{{ url_for("views.download_task", task_name=ts['task_name']) }}">Download</a></td>
+                    {% elif ts['task_status'] == 'FAILED' %}
+                    {{ ts['task_message'] }}
+                    {% elif ts['task_status'] == 'RUNNING' %}
+                    <a href="{{ url_for("views.cancel_task", task_name=ts['task_name']) }}">Cancel</a></td>
+                    {% else %}
+                    &nbsp;
+                    {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

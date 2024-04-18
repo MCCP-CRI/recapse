@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 from datetime import date
 from datetime import datetime
 from dateutil import relativedelta
@@ -33,8 +33,8 @@ def Step10C_Get_PerMonth_CCSProc_AllEnrolls(user_name, path_input, path_output):
     ################################################################################
     #1.Load group df
     ################################################################################
-    file_name = "Unique_Proc_And_Groups_inALLClaims.xlsx"
-    completeName = os.path.join(path_code, file_name)
+    file_name = "../group_defs/Unique_Proc_And_Groups_inALLClaims.xlsx"
+    completeName = os.path.join(os.path.dirname(__file__), file_name)
     proc_grp_df = pd.read_excel(completeName,header=0, index_col=False, dtype={'CCS_CATEGORY': str})
     
     #reformat 
@@ -87,4 +87,3 @@ def Step10C_Get_PerMonth_CCSProc_AllEnrolls(user_name, path_input, path_output):
     print("10C done")
         
         
-     

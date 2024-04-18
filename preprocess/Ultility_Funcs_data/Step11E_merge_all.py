@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 from datetime import date
 from datetime import datetime
 from dateutil import relativedelta
@@ -75,7 +75,6 @@ def Step11E_merge_all(user_name, path_output, drug_code):
 
 
 
-   
    
    
    

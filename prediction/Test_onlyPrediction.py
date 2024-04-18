@@ -22,14 +22,14 @@ if __name__ == '__main__':
     #Argments parser
     ############################################################################
     my_parser = argparse.ArgumentParser(allow_abbrev=False)  #Construct the argument parser
-    
+
     my_parser.add_argument("-fs" , type = str ,  required=True, help="Feature set (e.g., 'CCSandVAL2nd', 'CCSandDM3SPE')")
     my_parser.add_argument("-sc" , type = str ,  required=True, help="SBCE definition (e.g., use 'SBCE' if considered the First primary BC related death patients as SBCE, if not, use 'SBCE_Excluded_DeathPts')")
     my_parser.add_argument("-sm" , type = str ,  required=True, help="Selected Model (e.g.TopF_Model or Full_Model)")
     my_parser.add_argument("-indir" , type = str , required=False, default="./", help="The path to your input files of preprocessed claim data and patient-level characteristics Excel files, default is current folder. (e.g., /home/model/input)")
     my_parser.add_argument("-outdir" , type = str , required=False, default="./", help="The path to your output file, default is current folder. (e.g., /home/model/output)")
     my_parser.add_argument("-modeldir" , type = str , required=False, default="./Saved_XGBoost", help="The path to saved XGBoost model folders, default is ./Saved_XGBoost. (e.g., /home/model/Saved_XGBoost)")
-    my_parser.add_argument("-inputname" , type = str ,  required=False, default="All_11E_CCSandVAL2nd.pkl", help="Name of the input PKL file (e.g. default is 'All_11E_CCSandVAL2nd.pkl')")    
+    my_parser.add_argument("-inputname" , type = str ,  required=False, default="All_11E_CCSandVAL2nd.pkl", help="Name of the input PKL file (e.g. default is 'All_11E_CCSandVAL2nd.pkl')")
     my_parser.add_argument("-chrname" , type = str ,  required=False, default="8_PatientLevel_char_WithPossibleMonthsHasNoCodes.xlsx", help="The patient-level XLSX files that contains characteristics features. (e.g. default is PatientLevel_char_WithPossibleMonthsHasNoCodes.xlsx)")
     my_parser.add_argument("-method" , type = int ,  required=False, default=int(0), help="0 for both patient- and month-level prediction, 1 for only patient-level prediction, and 2 for only month-level prediction")
     my_parser.add_argument("-cutoff" , type = float ,  required=False, default="0.5", help="The cutoff used to determine SBCE patients. The cutoff ranges from 0.1 to 0.9, values exceeding one decimal place will be rounded to one decimal place (e.g., 0.6 means the predicted probability >=0.6 will be considered as SBCE patient)")
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     outPath = args['outdir']
     inPath = args['indir']
     modelPath = args['modeldir']
-   
+
     #Data dir
     data_dir1 = inPath + "/"
     data_dir2 = inPath + "/" #inpuit of chr file
@@ -65,11 +65,11 @@ if __name__ == '__main__':
     outdir = outPath + '/' + SBCE_col + "/" +selected_model + "/"
 
     if not os.path.exists(outdir):
-       # Create a new directory because it does not exist
-       os.makedirs(outdir)
-       print("The new directory is created!") 
+        # Create a new directory because it does not exist
+        os.makedirs(outdir)
+        print("The new directory is created!")
 
-    ####################
+        ####################
     # check parameters #
     ####################
     cutoff = round(cutoff_ori, 1)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
         raise ValueError("Wrong value for -sm, please use SBCE or SBCE_Excluded_DeathPts")
 
 
- 
+
     ####################################################################################################
     #1. Load data 
     ####################################################################################################
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     test_X1, test_ID1 = load_pythondata(data_dir1,input_name) #load_rdata(data_dir1,'test_neg_data.rda','test_neg_df',label_col)
     test_X = test_X1
     test_ID = test_ID1
-    
+
     ################################################################################
     #2. Prediction
     ################################################################################       
@@ -130,10 +130,20 @@ if __name__ == '__main__':
                                     'ABS_Month_Diff': 'ABS_Month_Diff_th' + sufix_col},
                          inplace = True)
         pred_df_p_list.append(pred_df_p)
-        
-    
+
+
     pred_df_p_all = reduce(lambda x, y: pd.merge(x, y, on = ['study_id',]), pred_df_p_list)
     pred_df_p_all.to_csv(outdir + 'patientlevel_prediction.csv', index = False)
+
+    ### new added code by Q.Q.
+    #Load SBCE month label patient -level
+    pts_level_char_df = pd.read_excel(data_dir2 + str(chr_name))
+
+    #pts_level_char_df['study_id'] = 'ID' + pts_level_char_df['study_id'].astype(str)
+    pts_level_char_df = pts_level_char_df.astype({'study_id': 'string'})
+
+    merged_df = pd.merge(pts_level_char_df, pred_df_p_all, on='study_id', how='outer')
+    merged_df.to_csv(outdir + 'patientlevel_prediction_merged_pt_chr.csv', index = False)
 
     print("Prediction finished")
 

@@ -9,7 +9,7 @@ import seaborn as sn
 from sklearn import metrics
 import sys
 #from IPython.display import display
-from Ultility_Funcs_data.Recapse_Ultility import *
+from .Recapse_Ultility import *
 
 
 
@@ -199,4 +199,3 @@ def Step2_GetPerPatientData_Medicaid_HealthClaims2(user_name, path_input, path_o
 
    
    print("Step 2 only Medicaid done")
-      
