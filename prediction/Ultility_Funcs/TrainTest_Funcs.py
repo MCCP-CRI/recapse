@@ -131,7 +131,7 @@ def prediction(model,test_data,ID,cutoff,method = "Classifier"):
     pred_classes_list = []
     for thres in thres_list:
         pred_classes = (pred_prob > thres).astype(int)
-        pred_classes = pd.DataFrame({'pred_class_th' + str(thres).replace('.',''): pred_classes})
+        pred_classes = pd.DataFrame({'pred_class': pred_classes})
         pred_classes_list.append(pred_classes)
     pred_classes_df = pd.concat(pred_classes_list, axis = 1)
 

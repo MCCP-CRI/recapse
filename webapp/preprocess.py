@@ -89,5 +89,3 @@ def preprocess_data(user_name, num_data, indir, outdir, metacsv, mecareClaims, m
     Step11C_Get_ModelReady_TransformationFeature(user_name, outdir, drug_code)
     Step11D_Get_ModelReady_Combed_Features(user_name, outdir, drug_code)
     Step11E_merge_all(user_name, outdir, drug_code)
-
-    # run prediction step

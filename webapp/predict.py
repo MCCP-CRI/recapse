@@ -1,11 +1,11 @@
 from prediction.Ultility_Funcs.DataLoader1 import load_rdata,load_pythondata
 from prediction.Ultility_Funcs.TrainTest_Funcs import prediction, patient_level_prediction
-from prediction.Ultility_Funcs.Performance_Func import compute_performance_binary,compute_month_diff_perf
+# from prediction.Ultility_Funcs.Performance_Func import compute_performance_binary,compute_month_diff_perf
 import pandas as pd
 from functools import reduce
 import joblib
 import os
-import argparse
+from webapp import translations
 
 
 def predict(feature_sets, SBCE_col, selected_model, input_name, chr_name, cutoff_ori, method, outPath, inPath):
@@ -85,17 +85,17 @@ def predict(feature_sets, SBCE_col, selected_model, input_name, chr_name, cutoff
     pred_df_p_list = []
     for thres in thres_list :
         pred_df_p  = patient_level_prediction(pred_df_m,thres,pred_method="3month")
-        sufix_col =  str(thres).replace('.','')
-        pred_df_p.rename(columns = {'pred_label': 'pred_label_th' + sufix_col,
-                                    'pred_month': 'pred_month_th' + sufix_col,
-                                    'RAW_Month_Diff': 'RAW_Month_Diff_th' + sufix_col,
-                                    'ABS_Month_Diff': 'ABS_Month_Diff_th' + sufix_col},
-                         inplace = True)
+        # sufix_col =  str(thres).replace('.','')
+        # pred_df_p.rename(columns = {'pred_label': 'pred_label_th' + sufix_col,
+        #                             'pred_month': 'pred_month_th' + sufix_col,
+        #                             'RAW_Month_Diff': 'RAW_Month_Diff_th' + sufix_col,
+        #                             'ABS_Month_Diff': 'ABS_Month_Diff_th' + sufix_col},
+        #                  inplace = True)
         pred_df_p_list.append(pred_df_p)
 
 
     pred_df_p_all = reduce(lambda x, y: pd.merge(x, y, on = ['study_id',]), pred_df_p_list)
-    pred_df_p_all.to_csv(outdir + 'patientlevel_prediction.csv', index = False)
+    # pred_df_p_all.to_csv(outdir + 'patientlevel_prediction.csv', index = False)
 
     ### new added code by Q.Q.
     #Load SBCE month label patient -level
@@ -108,5 +108,44 @@ def predict(feature_sets, SBCE_col, selected_model, input_name, chr_name, cutoff
     merged_df.to_csv(outdir + 'patientlevel_prediction_merged_pt_chr.csv', index = False)
 
     print("Prediction finished")
+    return summary_stats(merged_df)
 
-
+def summary_stats(df):
+    """generates summary statistics for a merged dataframe (patientlevel_prediction_merged_pt_chr)"""
+    stats = {}
+    stats['count'] = len(df)
+    positives = df[df['pred_label'] == 1]
+    stats['recurrences'] = len(positives)
+    # count by race
+    stats['by_race'] = {}
+    race_translation = translations.get_race_translation()
+    total_race_counts = df.merge(race_translation, on='Race')['Translation'].value_counts()
+    positive_race_counts = positives.merge(race_translation, on='Race')['Translation'].value_counts()
+    for race in total_race_counts.index:
+        tc = total_race_counts[race]
+        pc = 0
+        if race in positive_race_counts:
+            pc = positive_race_counts[race]
+        stats['by_race'][race] = [tc, pc]
+    # count by stage
+    stats['by_stage'] = {}
+    stage_translation = translations.get_stage_group_translation()
+    total_stage_counts = df.merge(stage_translation, on='Stage')['Translation'].value_counts()
+    positive_stage_counts = positives.merge(stage_translation, on='Stage')['Translation'].value_counts()
+    for stage in total_stage_counts.index:
+        tc = total_stage_counts[stage]
+        pc = 0
+        if stage in positive_stage_counts:
+            pc = positive_stage_counts[stage]
+        stats['by_stage'][stage] = [tc, pc]
+    # count by year dx
+    stats['by_year'] = {}
+    total_year_counts = df['Date_dx'].map(lambda x: x[-4:]).value_counts()
+    positive_year_counts = positives['Date_dx'].map(lambda x: x[-4:]).value_counts()
+    for year in total_year_counts.index.sort_values():
+        tc = total_year_counts[year]
+        pc = 0
+        if year in positive_year_counts:
+            pc = positive_year_counts[year]
+        stats['by_year'][year] = [tc, pc]
+    return stats

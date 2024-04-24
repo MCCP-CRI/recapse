@@ -890,7 +890,7 @@ def get_pts_level_char_func(ID_Sources_data, kcr_data):
         #    char_df.loc[char_df.index[i],"Stage"] = int(4)
         #else:
         #    char_df.loc[char_df.index[i],"Stage"] = 'NA'
-        elif int(curr_BestStageGrp) > 4:
+        elif int(curr_BestStageGrp) >= 4:
             char_df.loc[char_df.index[i],"Stage"] = 'NA'
         else:
             char_df.loc[char_df.index[i],"Stage"] = int(curr_BestStageGrp)
@@ -1334,17 +1334,17 @@ def check_medicare1(month_len_medicaid, month_len_medicare, start_medicaid, star
         raise ValueError("Start date of Medicare enrollment is required by -se parameter")
 
 def check_matched_files(num_data, mecareClaims, mecareEnroll, mecaidClaims, mecaidClaims2, mecaidEnroll):
-    default_mecareClaims = "medicare_claims_new.csv"
-    default_mecareEnroll = "medicare_enroll_new.csv"
-    default_mecaidClaims = "medicaid_claims_new.csv"
-    default_mecaidClaims2 = "medicaid_Rxclaims_new.csv"
-    default_mecaidEnroll = "medicaid_enroll_new.csv"
+    # default_mecareClaims = "medicare_claims_new.csv"
+    # default_mecareEnroll = "medicare_enroll_new.csv"
+    # default_mecaidClaims = "medicaid_claims_new.csv"
+    # default_mecaidClaims2 = "medicaid_Rxclaims_new.csv"
+    # default_mecaidEnroll = "medicaid_enroll_new.csv"
     if num_data == "1":
-        if mecaidClaims != default_mecaidClaims or mecaidClaims2 != default_mecaidClaims2 or mecaidEnroll != default_mecaidEnroll:
+        if mecaidClaims != None or mecaidClaims2 != None or mecaidEnroll != None:
             raise ValueError("User choose Medicare only but input claim or enrollment files are related to Medicaid or other enrollment. Please use -mecareClaims and -mecareEnroll for Medicare, or use -numdata 2 for Medicaid or other enrollment only or -numdata 0 for both.")
             #warnings.warn("User choose Medicare only but input claim or enrollment files are related to Medicaid or other enrollment. This may cause unexpected behavior.", UserWarning)
     elif num_data == "2":
-        if mecareClaims != default_mecareClaims or mecareEnroll != default_mecareEnroll:
+        if mecareClaims != None or mecareEnroll != None:
             raise ValueError("User choose Medicaid or other enrollment only but input claim or enrollment files are related to Medicare. Please use -mecaidClaims, -mecaidClaims and -mecaidEnroll for Medicaid or other enrollment, or use -numdata 1 for Medicaid only or -numdata 0 for both.")
             #warnings.warn("User choose Medicaid or other enrollment only but input claim or enrollment files are related to Medicare. This may cause unexpected behavior.", UserWarning)
 

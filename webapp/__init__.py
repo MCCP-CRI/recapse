@@ -3,6 +3,7 @@ from flask import Flask, render_template
 from flask_executor import Executor
 
 executor = None
+task_meta_data = {}
 
 
 def create_app(test_config=None):

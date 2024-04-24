@@ -11,9 +11,9 @@
     <input name="user" id="user" required />
     <label for="numdata">Data Type:</label>
     <select name="numdata" id="numdata">
+      <option value="0">Both</option>
       <option value="1">Only Medicare</option>
       <option value="2">Only Medicaid or Other Claims</option>
-      <option value="0">Both</option>
     </select>
     <label for="mld">Length of Medicaid or Other Insurance Enrollment File (in months):</label>
     <input name="mld" id="mld" />
@@ -28,7 +28,7 @@
       <option value="VAL_2ND">Short GNN drug grouped features</option>
       <option value="DM3_SPE">DM3 specific drug</option>
     </select>
-    <label for="metacsv">Metadata CSV:</label>
+    <label for="metacsv">Incidence Metadata CSV:</label>
     <input name="metacsv" id="metacsv" type="file" accept="text/csv" />
     <label for="mecareClaims">Medicare Claims CSV:</label>
     <input name="mecareClaims" id="mecareClaims" type="file" accept="text/csv" />
