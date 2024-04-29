@@ -12,7 +12,8 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY=os.urandom(12).hex(),
         EXECUTOR_MAX_WORKERS='2',
-        EXECUTOR_PROPAGATE_EXCEPTIONS=True
+        EXECUTOR_PROPAGATE_EXCEPTIONS=True,
+        EXECUTOR_TYPE='process'
     )
 
     if test_config is None:

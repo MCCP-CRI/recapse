@@ -25,7 +25,10 @@
                 </td>
                 <td>
                     {% if ts['task_status'] == 'FINISHED' %}
-                    <a href="{{ url_for("views.download_task", task_name=ts['task_name']) }}">Download</a>
+{#                        {% if ts['task_name'].startswith('prediction') %}#}
+                        <a href="{{ url_for("views.view_task_result", task_name=ts['task_name']) }}">Results Summary</a>
+{#                        {% endif %}#}
+                    <a href="{{ url_for("views.download_task", task_name=ts['task_name']) }}">Download Files</a>
                     <a href="{{ url_for("views.remove_task", task_name=ts['task_name']) }}">Remove</a>
                     {% elif ts['task_status'] == 'ERROR' %}
                     {{ ts['task_message'] }}

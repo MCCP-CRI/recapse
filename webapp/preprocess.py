@@ -1,4 +1,5 @@
 import sys
+import pandas as pd
 
 from webapp import executor
 
@@ -25,7 +26,6 @@ from preprocess.Ultility_Funcs_data.Step11D_Get_ModelReady_Combed_Features impor
 from preprocess.Ultility_Funcs_data.Step11E_merge_all import *
 
 
-@executor.job
 def preprocess_data(user_name, num_data, indir, outdir, metacsv, mecareClaims, mecareEnroll, mecaidClaims,
                     mecaidClaims2, mecaidEnroll, month_len_medicaid, month_len_medicare, start_medicaid,
                     start_medicare, drug_code):
@@ -89,3 +89,20 @@ def preprocess_data(user_name, num_data, indir, outdir, metacsv, mecareClaims, m
     Step11C_Get_ModelReady_TransformationFeature(user_name, outdir, drug_code)
     Step11D_Get_ModelReady_Combed_Features(user_name, outdir, drug_code)
     Step11E_merge_all(user_name, outdir, drug_code)
+
+
+def summary_stats(job_dir: str):
+    """generates summary statistics for a merged data file (patientlevel_prediction_merged_pt_chr.csv)"""
+    out_dir = os.path.join(job_dir, 'output')
+    for dir_path, dir_names, file_names in os.walk(out_dir):
+        for file in file_names:
+            if file.startswith('All_11E_'):
+                features = pd.read_pickle(os.path.join(dir_path, file))
+            elif file.startswith('8_PatientLevel_char_'):
+                patients = pd.read_excel(os.path.join(dir_path, file))
+    stats = {
+        "num_patients": len(patients),
+        "num_patient_months": len(features),
+        "num_features": len(features.columns)
+    }
+    return stats

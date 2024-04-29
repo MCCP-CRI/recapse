@@ -14,6 +14,7 @@ from . import preprocess, predict, executor, task_meta_data
 
 bp = Blueprint('views', __name__)
 
+
 @bp.route("/")
 def index():
     return render_template('index.html.j2')
@@ -34,10 +35,11 @@ def submit_predict():
     model = request.form['model']
     method = int(request.form['method'])
     cutoff = float(request.form['cutoff'])
+    user = request.form['user']
 
     # save files in new directory name based on user and microtime
     micro_time = time.time_ns() // 1000000
-    work_folder = f"prediction_{micro_time}"
+    work_folder = f"prediction_{user}_{micro_time}"
     work_dir = os.path.join(app.instance_path, work_folder)
     in_dir = os.path.join(work_dir, 'input')
     out_dir = os.path.join(work_dir, 'output')
@@ -61,34 +63,23 @@ def submit_predict():
         errors = True
         error_msg = "Medicare Claims file required"
 
-    # pass info off to prediction function
-    results = predict.predict(fs, sc, model, infileFilename, chrfileFilename, cutoff, method, out_dir, in_dir)
-
-    return render_template('predict_result.html.j2', work_dir=work_folder, results=results)
-
-
-@bp.route("/predict/<string:work_dir>", methods=['GET'])
-def download_predict(work_dir):
-    # work dir shouldn't contain slashes because of the flask string converter, but just in case sanitize the path to
-    # prevent escape. it will remove the passed directory tree at the end of this so best to be extra safe...
-    work_dir = os.path.relpath(os.path.normpath(os.path.join("/", work_dir)), "/")
-    work_dir = os.path.join(app.instance_path, work_dir)
-    out_dir = os.path.join(work_dir, "output")
-    # zip up output files - out_dir/*.csv
-    files = list(filter(lambda x: x.endswith('.csv'), os.listdir(out_dir)))
-
-    file_obj = io.BytesIO()
-    with zipfile.ZipFile(file_obj, 'w') as zip_file_handle:
-        for file in files:
-            zip_info = zipfile.ZipInfo(file)
-            zip_info.date_time = time.localtime(time.time())[:6]
-            zip_info.compress_type = zipfile.ZIP_DEFLATED
-            with open(os.path.join(out_dir, file), 'rb') as read_file_handle:
-                zip_file_handle.writestr(zip_info, read_file_handle.read())
-    file_obj.seek(0)
-    # delete the whole working directory
-    shutil.rmtree(work_dir)
-    return send_file(file_obj, mimetype="application/zip", download_name='predictions.zip', as_attachment=True)
+    if not errors:
+        # save run info and pass info off to prediction function
+        task_meta_data[work_folder] = {}
+        task_meta_data[work_folder]['start_time'] = time.strftime('%m/%d/%Y %H:%M:%S')
+        task_meta_data[work_folder]['run_options'] = {
+            'feature_set': fs,
+            'model': model,
+            'cutoff': cutoff
+        }
+        executor.submit_stored(work_folder, predict.predict, fs, sc, model, infileFilename, chrfileFilename, cutoff,
+                               method,
+                               out_dir, in_dir)
+        flash(f"Prediction task {work_folder} started.")
+        return redirect(url_for('views.view_tasks'))
+    else:
+        flash(error_msg)
+    return render_template('predict.html.j2')
 
 
 @bp.route("/preprocess", methods=['GET'])
@@ -168,7 +159,7 @@ def submit_preprocess():
             mecaidClaims.save(os.path.join(in_dir, mecaidClaimsFilename))
         else:
             errors = True
-            error_msg = "Medicaid Claims file required"
+            error_msg = "Medicaid/Other Claims file required"
 
         if not errors and 'mecaidClaims2' in request.files and request.files['mecaidClaims2'].filename != '':
             mecaidClaims2 = request.files['mecaidClaims2']
@@ -176,7 +167,7 @@ def submit_preprocess():
             mecaidClaims2.save(os.path.join(in_dir, mecaidClaims2Filename))
         else:
             errors = True
-            error_msg = "Medicaid Pharmacy Claims file required"
+            error_msg = "Medicaid/Other Pharmacy Claims file required"
 
         if not errors and 'mecaidEnroll' in request.files and request.files['mecaidEnroll'].filename != '':
             mecaidEnroll = request.files['mecaidEnroll']
@@ -184,17 +175,27 @@ def submit_preprocess():
             mecaidEnroll.save(os.path.join(in_dir, mecaidEnrollFilename))
         else:
             errors = True
-            error_msg = "Medicaid Enrollment file required"
+            error_msg = "Medicaid/Other Enrollment file required"
 
     # pass info off to executor
     if not errors:
-        preprocess.preprocess_data.submit_stored(
-            job_name, user, num_data, in_dir, out_dir, metacsvFilename, mecareClaimsFilename, mecareEnrollFilename,
-            mecaidClaimsFilename, mecaidClaims2Filename, mecaidEnrollFilename, month_len_medicaid, month_len_medicare,
-            start_medicaid, start_medicare, drug_code)
+        executor.submit_stored(job_name, preprocess.preprocess_data,
+                               user, num_data, in_dir, out_dir, metacsvFilename, mecareClaimsFilename,
+                               mecareEnrollFilename,
+                               mecaidClaimsFilename, mecaidClaims2Filename, mecaidEnrollFilename, month_len_medicaid,
+                               month_len_medicare,
+                               start_medicaid, start_medicare, drug_code)
         flash(f"Task {job_name} started")
         task_meta_data[job_name] = {}
         task_meta_data[job_name]['start_time'] = time.strftime('%m/%d/%Y %H:%M:%S')
+        task_meta_data[job_name]['run_options'] = {
+            'num_data': num_data,
+            'mon_len_medicaid': month_len_medicaid,
+            'mon_len_medicare': month_len_medicare,
+            'start_medicaid': start_medicaid,
+            'start_medicare': start_medicare,
+            'drug_code': drug_code
+        }
         return redirect(url_for('views.view_tasks'))
     else:
         flash(error_msg)
@@ -212,13 +213,14 @@ def view_tasks():
             ts['task_message'] = executor.futures._futures[task_name].exception()
             ts['task_status'] = 'ERROR'
         else:
-            ts['task_message'] = task_meta_data[task_name]['start_time']
+            if task_name in task_meta_data and 'start_time' in task_meta_data[task_name]:
+                ts['task_message'] = task_meta_data[task_name]['start_time']
         task_status.append(ts)
     return render_template('tasks.html.j2', task_status=task_status)
 
 
 @bp.route('/tasks/<string:task_name>/download')
-def download_task(task_name):
+def download_task(task_name: str):
     # work dir shouldn't contain slashes because of the flask string converter, but just in case sanitize the path to
     # prevent escape. it will remove the passed directory tree at the end of this so best to be extra safe...
     work_dir = os.path.relpath(os.path.normpath(os.path.join("/", task_name)), "/")
@@ -227,10 +229,13 @@ def download_task(task_name):
 
     # zip up output files - out_dir/*.csv
     files = []
-    for dirpath, dirnames, filenames in os.walk(out_dir):
-        for file in filenames:
-            if file.startswith('All_11E_') or file.startswith('8_PatientLevel_char_'):
-                files.append(os.path.join(dirpath, file))
+    if task_name.startswith('preprocess'):
+        for dirpath, dirnames, filenames in os.walk(out_dir):
+            for file in filenames:
+                if file.startswith('All_11E_') or file.startswith('8_PatientLevel_char_'):
+                    files.append(os.path.join(dirpath, file))
+    if task_name.startswith('prediction'):
+        files = list(filter(lambda x: x.endswith('.csv'), os.listdir(out_dir)))
 
     file_obj = io.BytesIO()
     with zipfile.ZipFile(file_obj, 'w') as zip_file_handle:
@@ -242,11 +247,26 @@ def download_task(task_name):
                 zip_file_handle.writestr(zip_info, read_file_handle.read())
     file_obj.seek(0)
 
-    return send_file(file_obj, mimetype="application/zip", download_name='preprocess.zip', as_attachment=True)
+    return send_file(file_obj, mimetype="application/zip", download_name=f'{task_name}.zip', as_attachment=True)
+
+
+@bp.route("/tasks/<string:task_name>/view")
+def view_task_result(task_name: str):
+    # sanitize work dir
+    work_dir = os.path.relpath(os.path.normpath(os.path.join("/", task_name)), "/")
+    work_dir = os.path.join(app.instance_path, work_dir)
+    if task_name.startswith('prediction'):
+        stats = predict.summary_stats(work_dir)
+        return render_template('predict_result.html.j2', task_name=task_name,
+                               run_options=task_meta_data[task_name]['run_options'], results=stats)
+    elif task_name.startswith('preprocess'):
+        stats = preprocess.summary_stats(work_dir)
+        return render_template('preprocess_result.html.j2', task_name=task_name,
+                               run_options=task_meta_data[task_name]['run_options'], results=stats)
 
 
 @bp.route('/tasks/<string:task_name>/remove')
-def remove_task(task_name):
+def remove_task(task_name: str):
     # delete the whole working directory
     work_dir = os.path.relpath(os.path.normpath(os.path.join("/", task_name)), "/")
     work_dir = os.path.join(app.instance_path, work_dir)
@@ -257,3 +277,8 @@ def remove_task(task_name):
     if executor.futures.pop(task_name) is not None:
         flash(f"Task {task_name} removed")
     return redirect(url_for('views.view_tasks'))
+
+# @bp.route('/debug')
+# """Function to invoke web debugger if debugging is enabled on flask server"""
+# def break_stuff():
+#     raise ValueError("you broke it")
