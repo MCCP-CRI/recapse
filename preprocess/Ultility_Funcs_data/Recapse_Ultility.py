@@ -609,7 +609,7 @@ def updated_SEERSummStg2000_func(kcr_data, new_kcr_data2):
     new_kcr_data2 = new_kcr_data2.set_index('study_id')
     new_kcr_data2 = new_kcr_data2.reindex(index=kcr_data['study_id'])
     new_kcr_data2 = new_kcr_data2.reset_index()
-    kcr_data['DerivedSS2000'] = new_kcr_data2['DerivedSS2000']
+    kcr_data['DerivedSS'] = new_kcr_data2['DerivedSS']
     kcr_data = kcr_data.fillna('NA')
 
     #Get comb SEERSummStg
@@ -617,9 +617,9 @@ def updated_SEERSummStg2000_func(kcr_data, new_kcr_data2):
     #2. for missing original SEER stage, use "DerivedSS2000 (‘DerivedSS2000’ was added for the summary stage between the years 2004-2015. )
     #No such information was captured for the year 2000.
     kcr_data['Comb_SEERSummStg'] = 'NA'
-    kcr_data.loc[kcr_data['SEERSummStg2000'] != 'NA', 'Comb_SEERSummStg'] = kcr_data.loc[kcr_data['SEERSummStg2000'] != 'NA', 'SEERSummStg2000']
-    kcr_data.loc[kcr_data['SEERSummStg2000'] == 'NA', 'Comb_SEERSummStg'] = kcr_data.loc[kcr_data['SEERSummStg2000'] == 'NA', "DerivedSS2000"]
-    kcr_data = kcr_data.drop(["SEERSummStg2000","DerivedSS2000"], axis=1)
+    kcr_data.loc[kcr_data['SEERSummStg'] != 'NA', 'Comb_SEERSummStg'] = kcr_data.loc[kcr_data['SEERSummStg'] != 'NA', 'SEERSummStg']
+    kcr_data.loc[kcr_data['SEERSummStg'] == 'NA', 'Comb_SEERSummStg'] = kcr_data.loc[kcr_data['SEERSummStg'] == 'NA', "DerivedSS"]
+    kcr_data = kcr_data.drop(["SEERSummStg","DerivedSS"], axis=1)
     return kcr_data
 
 

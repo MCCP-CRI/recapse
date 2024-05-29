@@ -95,18 +95,25 @@ def submit_preprocess():
     user = request.form['user']
     num_data = request.form['numdata']
 
-    if request.form['mld'] is not None and request.form['mld'] != '':
+    if 'mld' in request.form and request.form['mld'] is not None and request.form['mld'] != '':
         month_len_medicaid = int(request.form['mld'])
     else:
         month_len_medicaid = 0
 
-    if request.form['mle'] is not None and request.form['mle'] != '':
+    if 'mle' in request.form and request.form['mle'] is not None and request.form['mle'] != '':
         month_len_medicare = int(request.form['mle'])
     else:
         month_len_medicare = 0
 
-    start_medicaid = request.form['sd']
-    start_medicare = request.form['se']
+    if 'sd' in request.form:
+        start_medicaid = request.form['sd']
+    else: 
+        start_medicaid = 0
+
+    if 'se' in request.form: 
+        start_medicare = request.form['se']
+    else:
+        start_medicare = 0
     drug_code = request.form['dc']
 
     # save files in new directory name based on user and microtime

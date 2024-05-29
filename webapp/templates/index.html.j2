@@ -6,11 +6,16 @@
 
 {% block content %}
     <h2>User Guide</h2>
-    <p>RECAPSE is an XGBoost model for predicting cancer recurrence events based on insurance enrollment and claims data.</p>
-    <p>The first step is to preprocess the data. This is a time-consuming step that generates two files needed for the prediction step.
-    The first file is a metadata file containing consolidated patient level data. The second file is a file containing all of the
-    features used as input into the XGBoost prediction.</p>
-    <p>After the preprocessed data is generated, the two files can be fed through the model to generate predictions.</p>
+    <p>Recurrence using Claims and PROs for SEER Expansion (RECAPSE) is an XGBoost model for predicting cancer
+        recurrence events based on insurance enrollment and claims data.</p>
+    <h2>Preprocessing Data</h2>
+    <p>The first step is to preprocess the data. This is a time-consuming step that generates two files needed for the
+        prediction step:
+        <ol>
+            <li>Incidence File: Contains consolidated patient-level data.</li>
+            <li>Feature File: Contains all the features used as input into the XGBoost prediction.</li>
+        </ol>
+    After the preprocessed data is generated, the two files can be fed through the model to generate predictions.</p>
     <p>For details on creating the input files and the features required in the input data, see:</p>
     <ul>
         <li><a href="{{ url_for('static', filename='recapse_data_processing_guide.docx') }}">Data processing guide</a></li>
@@ -29,7 +34,7 @@
     </ul>
     <p>Files needed for preprocessing</p>
     <ul>
-        <li>Registry Incidence Metadata</li>
+        <li>Registry Incidence file</li>
         <li>Enrollment file (both Medicare and Medicaid/Other)</li>
         <li>Claims file (both Medicare and Medicaid/Other)</li>
         <li>Pharmacy claims file (Medicaid/Other only)</li>
@@ -40,7 +45,7 @@
         <li>Input feature sets - Should match the drug codes used to preprocess the files being submitted. If preprocessed
             using short GNN drug grouped features, the default file name will contain "CCSandVAL2nd". If using DM3
             specific drug features, the default filename from preprocessing will contain "CCSandDM3SPE".</li>
-        <li>SBCE Definition - Include or exclude death related to the first primary as a Second Breast Cancer Event</li>
+        <li>SBCE Definition - Include or exclude death related to the first primary as a Second Breast Cancer Event (SBCE)</li>
         <li>Model Type - Select the full model or limit to a smaller model using only the top features for prediction</li>
         <li>Prediction Output Detail Level - Level of detail of output. The month level output contains a row for each patient for each month. This file can get very large.</li>
         <li>Cutoff - The prediction score above which a recurrence signal is detected.</li>
