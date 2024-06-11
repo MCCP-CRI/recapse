@@ -830,7 +830,7 @@ def get_pts_level_char_func(ID_Sources_data, kcr_data):
         char_df.columns = ["study_id","Medicaid_OR_Medicare",
                            "Diagnosis_Year", "Date_dx","Race","Site",
                            "Stage", #"BestStageGrp",
-                           "SEERSummStg2000","regional","Laterality",
+                           "SEERSummStg","regional","Laterality",
                            "Grade","er_stat","pr_stat","surg_prim_site_V1","surg_prim_site_V2","her2_stat",
                            "radiation","reg_age_at_dx","reg_nodes_exam","reg_nodes_pos",
                            "cs_tum_size","cs_tum_ext","chemo","hormone","cs_tum_nodes",
@@ -924,9 +924,9 @@ def get_pts_level_char_func(ID_Sources_data, kcr_data):
             #Local or regional
             curr_seer_stage = curr_kcr.loc[curr_kcr.index[0],"Comb_SEERSummStg"]
         else:
-            char_df.loc[char_df.index[i],"SEERSummStg2000"] = curr_kcr.loc[curr_kcr.index[0],"SEERSummStg2000"]
+            char_df.loc[char_df.index[i],"SEERSummStg"] = curr_kcr.loc[curr_kcr.index[0],"SEERSummStg"]
             #Local or regional
-            curr_seer_stage = curr_kcr.loc[curr_kcr.index[0],"SEERSummStg2000"]
+            curr_seer_stage = curr_kcr.loc[curr_kcr.index[0],"SEERSummStg"]
         if curr_seer_stage == "NA":
             char_df.loc[char_df.index[i],"regional"] = "NA"
         else:
