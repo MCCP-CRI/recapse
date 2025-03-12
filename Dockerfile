@@ -1,5 +1,5 @@
 # Use a Python 3 image as the base
-FROM python:3-alpine
+FROM python:3.10-alpine
 
 # Set a working directory for the application
 WORKDIR /app
@@ -16,9 +16,12 @@ COPY preprocess preprocess/
 COPY webapp webapp/
 COPY app.py ./
 
+# Create user and instance directory
+RUN addgroup -g 1200 recapse && adduser -u 1200 recapse -G recapse -D && mkdir instance && chown recapse:recapse instance
 # Expose the port where Flask application runs (usually 5000)
 EXPOSE 5000
 
+USER recapse:recapse
 # Run the flask server
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
