@@ -2,7 +2,13 @@ RECAPSE Web Application
 ======
 
 **Re**currence using **C**laims **a**nd **P**ROs for **S**EER **E**xpansion (RECAPSE) is an XGBoost model for 
-predicting cancer recurrence events based on insurance enrollment and claims data.
+predicting cancer second breast cancer events (recurrence and new breast primary) based on registry cancer incidence 
+data linked with insurance enrollment and claims data.
+
+The purpose of this tool is to provide prediction of second breast cancer events and improve the efficiency of 
+registry operation effort to identify recurrences. Registries can utilize the results to manually check these cases 
+for true recurrences. Users can adjust the cut-off value to control the sensitivity and specificity of the results 
+based on their own specific data and resources available.
 
 The utility is written in Python. A frontend in the form of a web application is also provided as 
 either a standalone Flask application or a docker container. 

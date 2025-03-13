@@ -6,8 +6,13 @@
 
 {% block content %}
     <h2>User Guide</h2>
-    <p>Recurrence using Claims and PROs for SEER Expansion (RECAPSE) is an XGBoost model for predicting cancer
-        recurrence events based on insurance enrollment and claims data.</p>
+    <p>Recurrence using Claims and PROs for SEER Expansion (RECAPSE) is an XGBoost model for predicting second breast
+        cancer events (recurrence and new breast primary) based on registry cancer incidence data linked with insurance
+        enrollment and claims data.</p>
+    <p>The purpose of this tool is to provide prediction of second breast cancer events and improve the efficiency of
+        registry operation effort to identify recurrences. Registries can utilize the results to manually check these
+        cases for true recurrences. Users can adjust the cut-off value to control the sensitivity and specificity of
+        the results based on their own specific data and resources available.</p>
     <h2>Preprocessing Data</h2>
     <p>The first step is to preprocess the data. This is a time-consuming step that generates two files needed for the
         prediction step:
